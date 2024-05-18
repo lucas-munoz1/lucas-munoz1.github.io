@@ -1,6 +1,5 @@
-# lucas-munoz1.github.io
-
 # About
+Lucas Munoz 
 
 # Projects 
 
