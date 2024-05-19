@@ -26,6 +26,18 @@ _Figure 3: First Five Products in Database_
 _Figure 4: First Five Customer Reviews in Database_
 ![db custreview query](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/ff57822b-33b4-40d0-ae81-f3298f0fb1f1)
 
+### Data Scraping
+  In order to get data to use for analysis, I created webscrapers using Selenium 4.18.1 and beautifulsoup4 4.12.3. This process involved creating template scraping classes for Amazon, Alibaba, and AliExpress products, and using those templates in various methods to target specific types of data (Figure 5). However, these classes needed a product link to navigate to, so I also created a script which navigated through the various categories on the three websites to collect product links (Figure 6). Finally, I needed a way to transfer this data to the database, so I made a list of importable functions which handled all compleities of uploading data to the database. (Figure 7)
+
+_Figure 5: Example Code for Alibaba Product Details_
+![scraping product details](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/5ed2625e-8c4b-4b5e-9424-a3672810a86c)
+
+_Figure 6: Example Code to Collect Product Links_
+![scrape product links](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/a032f874-97f8-46bc-89e1-9d0b379dae28)
+
+_Figure 7: Example Code Upload to Database_
+![db upload](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/c6b5229a-52fd-466f-a3b8-1cdb8fd6ab82)
+
 ## Project 2
 
 ## Project 3
