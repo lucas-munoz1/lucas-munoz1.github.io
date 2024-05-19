@@ -40,6 +40,14 @@ _Figure 6: Example Code to Collect Product Links_
 _Figure 7: Example Code Upload to Database_
 ![db upload](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/c6b5229a-52fd-466f-a3b8-1cdb8fd6ab82)
 
+The final script used for the first round of data collection iterated through 11 product categories on the three different websites, collected each products details, as well as their relationship to other products, and uploaded the data into the database in batches of 10. Figure 8 shows the general outline of this script, and figure 9 shows the imported packages and files used. 
+
+_Figure 8: Outline of 1st Round of Data Collection_
+![data collection 1](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/5155ef07-33ec-41e1-bdc1-c14f4805dc31)
+
+_Figure 9: Imports Used for Data Collection_
+![dc1 imports](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/eb1fd0dd-c99a-4c07-93e1-8e543375b513)
+
 ## Project 2
 
 ## Project 3
