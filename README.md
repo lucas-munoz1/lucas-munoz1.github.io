@@ -20,7 +20,13 @@ _Figure 2: Final Draft Relational Schema_
 ![Analytics - Final Relationship Schema](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/32a25523-1e6f-4932-9198-0791c90ad6b9)
 The relational schema shown in figure 2 depicts each relationship in a format that will translate to a database. 
 
-Lastly, I chose to use a local Postgresql database, and managed it using Dbeaver. 
+Lastly, I chose to use a local Postgresql database, and managed it using Dbeaver. The following screenshots show the first five rows of products and customer reviews. 
+
+_Figure 3: First Five Products in Database_
+![db product query](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/5f162dee-513e-4797-87ba-3cda8781cfcd)
+
+_Figure 4: First Five Customer Reviews in Database_
+![db custreview query](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/ff57822b-33b4-40d0-ae81-f3298f0fb1f1)
 
 ## Project 2
 
