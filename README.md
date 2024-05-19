@@ -1,9 +1,9 @@
 # Table of Contents
 - [About](#about)
-- [Ecommerce Product Analysis Engine] (#engine)
-  - [Summary] (#summary1)
-  - [Data & Database Overview] (#dataoverview1)
-  - [Data Scraping] (#scraping)
+- [Ecommerce Product Analysis Engine](#engine)
+  - [Summary](#summary1)
+  - [Data & Database Overview](#dataoverview1)
+  - [Data Scraping](#scraping)
 # About {#about}
 Lucas Munoz 
 
