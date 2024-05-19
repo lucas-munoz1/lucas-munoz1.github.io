@@ -4,10 +4,15 @@
   - [Summary](#summary1)
   - [Data & Database Overview](#dataoverview1)
   - [Data Scraping](#scraping)
-# About {#about}
-Lucas Munoz 
+- [KIPP Texas Data Analysis](#kipp)
+- [Kaggle Housing Data Analysis](#kaggle)
 
-# Projects 
+# About {#about}
+  This portfolio showcases three projects completed during my undergraduate studies. The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven decisions into a potential ecommerce business. To preserve the confidentiality and integrity of the proprietary processes involved, I have included screenshots of the code rather than the actual files.
+
+The second project, KIPP Texas Data Analysis, was undertaken as part of a consulting class in the Spring of 2024. My team and I were tasked with analyzing a substantial dataset provided by KIPP Texas, comprising over 200,000 entries, to identify demographic factors influencing test score outcomes. Similarly, to ensure the confidentiality of the dataset, I have included screenshots of the code and analysis instead of the actual files.
+
+Lastly, the Kaggle Housing data analysis project was completed in March of 2023 as part of a machine learning class. I was given a large housing dataset, and tasked with cleaning and modeling to predict housing prices based on attributes of a house. As this dataset is publically available, I have attached both the dataset and my code files to this page. 
 
 ## Ecommerce Product Analysis Engine {#engine}
 ### Summary {#summary1}
@@ -54,6 +59,6 @@ _Figure 8: Outline of 1st Round of Data Collection_
 _Figure 9: Imports Used for Data Collection_
 ![dc1 imports](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/eb1fd0dd-c99a-4c07-93e1-8e543375b513)
 
-## Project 2
+## KIPP Texas Student Data Analysis {#kipp}
 
-## Project 3
+## Kaggle Housing Data Analysis {#kaggle}
