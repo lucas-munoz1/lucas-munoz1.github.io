@@ -42,17 +42,17 @@ _Figure 3: First Five Customer Reviews in Database_
 ### Data Scraping {#scraping}
 In order to get product data to use for both analysis and model development, I developed a series of web scrapers using Selenium 4.18.1 and beautifulsoup4 4.12.3. I began by creating template scraping classes for single product pages on Amazon, AliExpress, and Alibaba, as well as a class to collect customer review data from Amazon. 
 The data collection process was divided into two sections:
-1.	Collect data to make machine learning models.
+1. **Collect data to make machine learning models.**
+  First, I needed to collect data specifically for modeling. In order to make a model that generalizes well to data it hasn’t been trained on, I needed a rich variety of products from many different categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process. 
 
-First, I needed to collect data specifically for modeling. In order to make a model that generalizes well to data it hasn’t been trained on, I needed a rich variety of products from many different categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process. 
+  VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
+  Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
 
-VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
-Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
+2. **Collect data to analyze.**
+  After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed. 
+  VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
+  Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data.
 
-2.	Collect data to analyze.
-After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed. 
-VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
-Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data. 
 VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION 
 Figure X visualizes the movement of the data collected….. blah blah blah
 
@@ -61,32 +61,43 @@ Following the creation and initial population of the database, it came time to d
 
 #### NER with SpaCy
 The first model I created was a Named Entity Recognition model using SpaCy, designed to extract the ‘type’ of a product from its title. A product’s ‘type’ refers to its most fundamental category. For example, if a product title is ‘Mechanical feeling gaming keyboard’, the type would be ‘keyboard’. This model aimed to categorize products effectively for further analysis and comparison. 
-Data Collection & Annotation
+
+**Data Collection & Annotation**
 To create this model, I extracted a substantial dataset of product titles from the database. Initially, this dataset contained 630 documents, which I expanded to 3245 documents through extensive annotation. I used Doccano, an open-source annotation tool, to label the data. The annotation process involved: 
-1.	Defining ‘Type’: Clearly defining the ‘type’ and establishing annotation rules to ensure consistency
-2.	Formatting data: Converting the raw JSON data from the database into JSON Lines format compatible with Doccano 
-3.	Manual Annotation: Manually labeling the product titles according to the predefined rules. 
+1.	**Defining ‘Type’:** Clearly defining the ‘type’ and establishing annotation rules to ensure consistency
+2.	**Formatting data:** Converting the raw JSON data from the database into JSON Lines format compatible with Doccano 
+3.	**Manual Annotation:** Manually labeling the product titles according to the predefined rules.
+
 VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION & ANNOTATION PROCESS
-Model Training & Evaluation
+
+**Model Training & Evaluation**
 After annotating approximately half of the initial dataset, I began training the NER model to identify areas for improvement. From this point on, the steps included: 
-1.	Configuring the model: Downloading an NER configuration file from the SpaCy website and converting the annotated JSON Lines data into SpaCy’s required format. This involved:
-a.	Converting texts into ‘docs’ and indexing each annotated label
-b.	Organizing all docs into a DocBin
-c.	Splitting the dataset into training and test sets. 
-VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY 
-2.	Training the model: Using SpaCy to train the NER model on the annotated dataset, iteratively improving the model by refining annotations and retraining. 
-VISUAL PLACEHOLDER: SC OF TRAINING PROCESS
-3.	Evaluation metrics: Assessing the model’s performance using precision, recall, and F-score. The final model achieved the following metrics: 
-a.	Precision: 0.895 
-b.	Recall: 0.917
-c.	F-score: 0.906
-VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME 
-Challenges & Solutions
+1.	**Configuring the model:** Downloading an NER configuration file from the SpaCy website and converting the annotated JSON Lines data into SpaCy’s required format. This involved:
+  a.  Converting texts into ‘docs’ and indexing each annotated label
+  b.	Organizing all docs into a DocBin
+  c.	Splitting the dataset into training and test sets.
+
+  VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
+
+2.	**Training the model:** Using SpaCy to train the NER model on the annotated dataset, iteratively improving the model by refining annotations and retraining.
+
+  VISUAL PLACEHOLDER: SC OF TRAINING PROCESS
+  
+3.	**Evaluation metrics:** Assessing the model’s performance using precision, recall, and F-score. The final model achieved the following metrics: 
+  a.	Precision: 0.895 
+  b.	Recall: 0.917
+  c.	F-score: 0.906
+
+  VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME 
+  
+**Challenges & Solutions**
 A significant challenge during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
-1.	Documentation: Kept a detailed record of labeling rules and examples to ensure consistent annotations. 
-2.	Auto labeling: Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the model’s performance in real-time, providing valuable insights for further improvements and speeding up the annotation process.
-VISUAL PLACEHOLDER: AUTO LABELING GIF SPLIT – ONE SIDE SHOWING LABELING – OTHER SHOWING TERMINAL OUTPUT  
-Conclusion 
+  1.	Documentation: Kept a detailed record of labeling rules and examples to ensure consistent annotations. 
+  2.	Auto labeling: Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the model’s performance in real-time, providing valuable insights for further improvements and speeding up the annotation process.
+
+VISUAL PLACEHOLDER: AUTO LABELING GIF SPLIT – ONE SIDE SHOWING LABELING – OTHER SHOWING TERMINAL OUTPUT 
+
+**Conclusion** 
 My goal was to develop a model with an F-score above 0.9. Through iterative training and refinement, I successfully created an NER model that met this benchmark, achieving an F-score of 0.906. This model now serves as a foundational component for organizing and analyzing product titles.
 
 #### Sentiment Analysis with SpaCy 
