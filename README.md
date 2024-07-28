@@ -44,17 +44,20 @@ In order to get product data to use for both analysis and model development, I d
 The data collection process was divided into two sections:
 
 1. **Collect data to make machine learning models.**
-   
-  First, I needed to collect data specifically for modeling. In order to make a model that generalizes well to data it hasn’t been trained on, I needed a rich variety of products from many different categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process. 
 
-  VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
-  Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
+   First, I needed to collect data specifically for modeling. In order to make a model that generalizes well to data it hasn’t been trained on, I needed a rich variety of products from many different 
+   categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes 
+   for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process. 
+
+   VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
+   Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
 
 2. **Collect data to analyze.**
    
-  After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed. 
-  VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
-  Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data.
+   After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product 
+   names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed. 
+   VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
+   Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data.
 
 VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION 
 Figure X visualizes the movement of the data collected….. blah blah blah
@@ -67,9 +70,10 @@ The first model I created was a Named Entity Recognition model using SpaCy, desi
 
 #### Data Collection & Annotation
 To create this model, I extracted a substantial dataset of product titles from the database. Initially, this dataset contained 630 documents, which I expanded to 3245 documents through extensive annotation. I used Doccano, an open-source annotation tool, to label the data. The annotation process involved: 
-1.	**Defining ‘Type’:** Clearly defining the ‘type’ and establishing annotation rules to ensure consistency
-2.	**Formatting data:** Converting the raw JSON data from the database into JSON Lines format compatible with Doccano 
-3.	**Manual Annotation:** Manually labeling the product titles according to the predefined rules.
+
+  1.	**Defining ‘Type’:** Clearly defining the ‘type’ and establishing annotation rules to ensure consistency
+  2.	**Formatting data:** Converting the raw JSON data from the database into JSON Lines format compatible with Doccano 
+  3.	**Manual Annotation:** Manually labeling the product titles according to the predefined rules.
 
 VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION & ANNOTATION PROCESS
 
