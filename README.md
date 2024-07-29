@@ -90,9 +90,9 @@ example, if a product title is ‘Mechanical feeling gaming keyboard’, the typ
 To create this model, I extracted a substantial dataset of product titles from the database. Initially, this dataset contained 630 documents, which I expanded to 3245 documents through extensive 
 annotation. I used Doccano, an open-source annotation tool, to label the data. The annotation process involved: 
 
-  1.	Defining ‘Type’: Clearly defining the ‘type’ and establishing annotation rules to ensure consistency
-  2.	Formatting data: Converting the raw JSON data from the database into JSON Lines format compatible with Doccano 
-  3.	Manual Annotation: Manually labeling the product titles according to the predefined rules.
+  1.	Clearly defining the ‘type’ and establishing annotation rules to ensure consistency
+  2.	Converting the raw JSON data from the database into JSON Lines format compatible with Doccano 
+  3.	Manually labeling the product titles according to the predefined rules.
 
 VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION & ANNOTATION PROCESS
 
@@ -120,8 +120,8 @@ After annotating approximately half of the initial dataset, I began training the
 #### Challenges & Solutions
 A significant challenge during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
 
-  1.	Documentation: Kept a detailed record of labeling rules and examples to ensure consistent annotations. 
-  2.	Auto labeling: Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the model’s performance in real- 
+  1.	Kept a detailed record of labeling rules and examples to ensure consistent annotations. 
+  2.	Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the model’s performance in real- 
       time, providing valuable insights for further improvements and speeding up the annotation process.
 
 VISUAL PLACEHOLDER: AUTO LABELING GIF SPLIT – ONE SIDE SHOWING LABELING – OTHER SHOWING TERMINAL OUTPUT 
@@ -134,8 +134,8 @@ now serves as a foundational component for organizing and analyzing product titl
 The second model I developed was a sentiment analysis model using SpaCy's textcat component to classify customer review subtitles as positive, neutral, or negative. I opted to use review subtitles instead 
 of full reviews because the subtitles more directly conveyed customers' emotions, whereas the full reviews often contained more detailed content. This model served two primary purposes:
 
-1.	Comparing Sentiment Distributions: To compare sentiment distributions between different products.
-2.	Analyzing Customer Reactions: To isolate and analyze customer reviews based on their sentiment, facilitating targeted analysis of product attributes that elicit negative reactions.
+1.	To compare sentiment distributions between different products.
+2.	To isolate and analyze customer reviews based on their sentiment, facilitating targeted analysis of product attributes that elicit negative reactions.
    
 #### Data Collection and Preprocessing
 I began by extracting a dataset of 600 review subtitles from Amazon. Learning from previous experience, I ensured to preprocess the data before annotation to avoid issues such as handling emojis, blank 
