@@ -55,27 +55,27 @@ In order to get product data to use for both analysis and model development, I d
 classes for single product pages on Amazon, AliExpress, and Alibaba, as well as a class to collect customer review data from Amazon. 
 The data collection process was divided into two sections:
 
-1. Collect data to make machine learning models
+### Data for Modeling
 
-   First, I needed to collect data specifically for modeling. In order to make a model that generalizes well to data it hasn’t been trained on, I needed a rich variety of products from many different 
-   categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes 
-   for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process.
+First, I needed to collect data specifically for modeling. In order to make a model that generalizes well to data it hasn’t been trained on, I needed a rich variety of products from many different 
+categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes 
+for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process.
 
-   VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
+VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
+
+Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
+
+### Data for Analysis 
    
-   Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
+After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product 
+names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed.
 
-3. Collect data to analyze
-   
-   After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product 
-   names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed.
-   
-   VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
-   
-   Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data.
+VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
+
+Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data.
 
 
-VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION 
+VISUAL PLACEHOLDER: FLOWCHART OF THE 2 DATA COLLECTION PROCESSES
 
 Figure X visualizes the movement of the data collected….. blah blah blah
 
