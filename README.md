@@ -86,38 +86,37 @@ Following the creation and initial population of the database, it came time to d
 The first model I created was a Named Entity Recognition model using SpaCy, designed to extract the ‘type’ of a product from its title. A product’s ‘type’ refers to its most fundamental category. For 
 example, if a product title is ‘Mechanical feeling gaming keyboard’, the type would be ‘keyboard’. This model aimed to categorize products effectively for further analysis and comparison. 
 
-#### Data Collection & Annotation
+#### Annotation Guidelines
 To create this model, I extracted a substantial dataset of product titles from the database. Initially, this dataset contained 630 documents, which I expanded to 3245 documents through extensive 
-annotation. I used Doccano, an open-source annotation tool, to label the data. The annotation process involved: 
+annotation. The annotation process entailed manually labeling the product titles according to a set of predefined rules, but as this was my first NER model, the rules changed significantly throughout the 
+process. I started ambitiously, looking to extract each products:
+  1. Type 
+  2. Descriptor
+  3. Specification
+  4. Usage
+  5. Target Audience
 
-  1.	Clearly defining the ‘type’ and establishing annotation rules to ensure consistency
-  2.	Converting the raw JSON data from the database into JSON Lines format compatible with Doccano 
-  3.	Manually labeling the product titles according to the predefined rules.
+However, as I continued, I realized it was necessary to simplify as much as possible to ensure that I could get to the end of the process. The final set of guidelines I came up with was simple: 
+  1. Type:
+     -  Label the word or words that specify what the product is, within the context of a broader category
+     -  This is similar to a subcategory (e.g., ‘Bike’ subcategory of ‘Outdoors’, ‘Shirt’ and ‘Shoe’ is a subcategory for ‘Clothing’.)
+     -  There can be multiple types in a product. If a product is a ‘Bike kit’, and it has ‘Two size 2 wheels’ and a ‘Bike pump’ in the kit, then all of those items would be descriptors + types. However, 
+        the type should always be describing the product, not what the product is made from or made up of. 
 
-VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION & ANNOTATION PROCESS
+#### Reformatting
+For labeling, I decided to use Doccano, an open-source annotation tool. However, the data extracted from the database came in JSON, whereas Doccano accepts JSON Lines. To address this, I wrote a Python 
+script that converted JSON documents into JSON Lines. 
 
-#### Model Training & Evaluation
-After annotating approximately half of the initial dataset, I began training the NER model to identify areas for improvement. From this point on, the steps included: 
+VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM JSON TO JSON LINES  
 
-1.	Configuring the model: Downloading an NER configuration file from the SpaCy website and converting the annotated JSON Lines data into SpaCy’s required format. This involved:
+Similarly, after the annotation was done, I had to reformat the JSON Lines documents into SpaCy's required format. This involved:
     - Converting texts into ‘docs’ and indexing each annotated label
     - Organizing all docs into a DocBin
     - Splitting the dataset into training and test sets.
-  
-    VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
+    
+VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
 
-2.	Training the model: Using SpaCy to train the NER model on the annotated dataset, iteratively improving the model by refining annotations and retraining.
-
-    VISUAL PLACEHOLDER: SC OF TRAINING PROCESS
-  
-3.	Evaluation metrics: Assessing the model’s performance using precision, recall, and F-score. The final model achieved the following metrics:
-  - Precision: 0.895
-  - Recall: 0.917
-  - F-score: 0.906
-
-    VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME 
-  
-#### Challenges & Solutions
+#### Consistency
 A significant challenge during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
 
   1.	Kept a detailed record of labeling rules and examples to ensure consistent annotations. 
@@ -126,9 +125,16 @@ A significant challenge during the annotation process was maintaining consistenc
 
 VISUAL PLACEHOLDER: AUTO LABELING GIF SPLIT – ONE SIDE SHOWING LABELING – OTHER SHOWING TERMINAL OUTPUT 
 
-#### NER - Conclusion 
+#### Model Training & Evaluation
+This model was iteratively trained using SpaCy's NER component, and after consistently refining the annotations, the final model achieved the following metrics: 
+  - Precision: 0.895
+  - Recall: 0.917
+  - F-score: 0.906
+
+VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME 
+
 My goal was to develop a model with an F-score above 0.9. Through iterative training and refinement, I successfully created an NER model that met this benchmark, achieving an F-score of 0.906. This model 
-now serves as a foundational component for organizing and analyzing product titles.
+now serves as a foundational component for organizing and analyzing product titles. Throughout the course of training this model, I learned valuable lessons, usually the hard way. For instance, I did not preprocess the data before annotation, which led to frustrating errors, such as SpaCy failing when it encountered emojis. I made sure to keep these types of lessons in mind as I continued devloping this engine. 
 
 ### Sentiment Analysis with SpaCy 
 The second model I developed was a sentiment analysis model using SpaCy's textcat component to classify customer review subtitles as positive, neutral, or negative. I opted to use review subtitles instead 
@@ -159,8 +165,10 @@ ratings of 3 stars or lower to balance the distribution effectively, resulting i
 VISUAL PLACEHOLDER: BAR OR PIE CHART SHOWING DISTRIBUTION OF P,N,N BEFORE AND AFTER BALANCING
 
 #### Handling Diverse Language
-A challenge I encountered was the diversity of language, particularly adjectives used consistently in one context, which confused the model. To address this, I generated synthetic data using ChatGPT. This 
-involved creating synthetic subtitles using problematic words in positive, neutral, and negative contexts. This approach improved the model's performance.
+A similar challenge I encountered was the lack of diversity of language, particularly adjectives used consistently in one context. This caused the model to interpret certain phrases incorrectly, and skew 
+the output. To address this, I generated synthetic data using ChatGPT. This involved creating synthetic subtitles using problematic words in positive, neutral, and negative contexts. My approach was to 
+give ChatGPT a few examples of the subtitles the model struggled with, and ask for similar subtitles but in all three contexts. After experimenting with different amounts and types of synthetic subtitles, 
+it became clear that adding small batches which directly targeted specific wording improved the performance of the model. 
 
 VISUAL PLACEHOLDER: EXAMPLE OF SYNTHETIC DATA GENERATED USING CHATGPT
 
@@ -173,12 +181,13 @@ I trained the sentiment analysis model using SpaCy's textcat component. The fina
   
 VISUAL PLACEHOLDER: TABLE SHOWING CHANGING METRIC SCORES 
 
-While the model's performance metrics were slightly below my initial goal of 0.9, I was satisfied with the results and decided to proceed to the next model, knowing I could return to improve it later.
+While the model's performance metrics were slightly below my initial goal of 0.9, I was satisfied with the results and decided to proceed to the next model, knowing I could return to improve it later. The 
+most valuable lesson I took away from training this model, was the power of synthetic data. Using it subtly, and in the right spots, had worked wonders. 
 
 ### Text Classification with BERT 
 The final model I developed for this engine was a text classification model designed to identify market gap language in customer reviews. Market gap language is defined as language describing a customer's 
-desire for an attribute that was not included in the product. While I won't delve into the specific rules and annotation process to maintain confidentiality, I will detail the development and training of 
-this model.
+desire for an attribute that was not included in the product. To maintain confidentiality, I won't discuss the purpose, specific rules, and annotation processes for this model. However, I will detail the 
+components, training processes, and the current results. 
 
 This model was built using XGBoost in combination with several embedding and analysis techniques:
   - Continuous Bag of Words (CBOW) model using Word2Vec
