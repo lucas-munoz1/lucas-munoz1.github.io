@@ -110,14 +110,15 @@ script that converted JSON documents into JSON Lines.
 VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM JSON TO JSON LINES  
 
 Similarly, after the annotation was done, I had to reformat the JSON Lines documents into SpaCy's required format. This involved:
-    - Converting texts into ‘docs’ and indexing each annotated label
-    - Organizing all docs into a DocBin
-    - Splitting the dataset into training and test sets.
+
+  - Converting texts into ‘docs’ and indexing each annotated label
+  - Organizing all docs into a DocBin
+  - Splitting the dataset into training and test sets.
     
 VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
 
 #### Consistency
-A significant challenge during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
+A significant challenge I faced during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
 
   1.	Kept a detailed record of labeling rules and examples to ensure consistent annotations. 
   2.	Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the model’s performance in real- 
