@@ -100,24 +100,22 @@ VISUAL PLACEHOLDER: FLOWCHART OF DATA COLLECTION & ANNOTATION PROCESS
 After annotating approximately half of the initial dataset, I began training the NER model to identify areas for improvement. From this point on, the steps included: 
 
 1.	Configuring the model: Downloading an NER configuration file from the SpaCy website and converting the annotated JSON Lines data into SpaCy’s required format. This involved:
-
-  a.  Converting texts into ‘docs’ and indexing each annotated label
-  b.	Organizing all docs into a DocBin
-  c.	Splitting the dataset into training and test sets.
-
-  VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
+    - Converting texts into ‘docs’ and indexing each annotated label
+    - Organizing all docs into a DocBin
+    - Splitting the dataset into training and test sets.
+  
+    VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
 
 2.	Training the model: Using SpaCy to train the NER model on the annotated dataset, iteratively improving the model by refining annotations and retraining.
 
-  VISUAL PLACEHOLDER: SC OF TRAINING PROCESS
+    VISUAL PLACEHOLDER: SC OF TRAINING PROCESS
   
 3.	Evaluation metrics: Assessing the model’s performance using precision, recall, and F-score. The final model achieved the following metrics:
+  - Precision: 0.895
+  - Recall: 0.917
+  - F-score: 0.906
 
-  a.	Precision: 0.895 
-  b.	Recall: 0.917
-  c.	F-score: 0.906
-
-  VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME 
+    VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME 
   
 #### Challenges & Solutions
 A significant challenge during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
@@ -128,7 +126,7 @@ A significant challenge during the annotation process was maintaining consistenc
 
 VISUAL PLACEHOLDER: AUTO LABELING GIF SPLIT – ONE SIDE SHOWING LABELING – OTHER SHOWING TERMINAL OUTPUT 
 
-#### Conclusion 
+#### NER - Conclusion 
 My goal was to develop a model with an F-score above 0.9. Through iterative training and refinement, I successfully created an NER model that met this benchmark, achieving an F-score of 0.906. This model 
 now serves as a foundational component for organizing and analyzing product titles.
 
@@ -166,23 +164,12 @@ involved creating synthetic subtitles using problematic words in positive, neutr
 
 VISUAL PLACEHOLDER: EXAMPLE OF SYNTHETIC DATA GENERATED USING CHATGPT
 
-#### Model Training and Performance
+#### Model Training and Evaluation
 I trained the sentiment analysis model using SpaCy's textcat component. The final model achieved the following performance metrics:
 
-- Positive:
-    Precision: 0.890
-    Recall: 0.886
-    F-score: 0.888
-  
-- Neutral:
-    Precision: 0.859
-    Recall: 0.822
-    F-score: 0.840
-  
-- Negative:
-    Precision: 0.867
-    Recall: 0.904
-    F-score: 0.885
+- Positive: Precision: 0.890, Recall: 0.886, F-score: 0.888 
+- Neutral: Precision: 0.859, Recall: 0.822, F-score: 0.840
+- Negative: Precision: 0.867, Recall: 0.904, F-score: 0.885
   
 VISUAL PLACEHOLDER: TABLE SHOWING CHANGING METRIC SCORES 
 
