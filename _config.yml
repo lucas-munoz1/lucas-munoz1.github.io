@@ -1,3 +1,6 @@
 title: Lucas Munoz 
 # show_downloads: true 
 theme: jekyll-theme-minimal
+
+#Include the custom CSS
+include: ['assets/css/custom.css']
