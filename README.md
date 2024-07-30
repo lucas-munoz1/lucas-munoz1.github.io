@@ -96,7 +96,7 @@ process. I started ambitiously, looking to extract each products:
   4. Usage - The intended use of the product
   5. Target Audience - Words that describe the intended user of the product
 
-However, as I continued, I realized it was necessary to simplify as much as possible to ensure that I could get to the end of the process. The final set of guidelines I came up with was simple: 
+However, as I continued, I realized it was necessary to simplify as much as possible to ensure that I could get to the end of the process in a reasonable amount of time. The final set of guidelines I came up with was simple: 
   1. Type:
      -  Label the word or words that specify what the product is, within the context of a broader category
      -  This is similar to a subcategory (e.g., ‘Bike’ subcategory of ‘Outdoors’, ‘Shirt’ and ‘Shoe’ is a subcategory for ‘Clothing’.)
