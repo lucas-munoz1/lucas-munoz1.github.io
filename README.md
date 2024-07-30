@@ -118,7 +118,7 @@ Similarly, after the annotation was done, I had to reformat the JSON Lines docum
 VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
 
 #### Consistency
-A significant challenge I faced during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
+A significant challenge I faced during the annotation process was maintaining consistency across a growing dataset. Often times I would come across a type of product and not remember how I had designated it's type previously. Furthermore, the search indexing on Doccano was slightly broken, so I was unable to properly search through the dataset after I annotated it. To address this, I: 
 
   -  Kept a detailed record of labeling rules and examples to ensure consistent annotations.
   -  Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the 
