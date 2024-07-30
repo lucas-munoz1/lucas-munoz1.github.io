@@ -184,7 +184,7 @@ I trained the sentiment analysis model using SpaCy's textcat component. The fina
 VISUAL PLACEHOLDER: TABLE SHOWING CHANGING METRIC SCORES 
 
 While the model's performance metrics were slightly below my initial goal of 0.9, I was satisfied with the results and decided to proceed to the next model, knowing I could return to improve it later. The 
-most valuable lesson I took away from training this model, was the power of synthetic data. Using it subtly, and in the right spots, had worked wonders. 
+most valuable lesson I took away from training this model, was the power of synthetic data. Using it subtly, and in the right spots, had produced excellent results.
 
 ### Text Classification with BERT 
 The final model I developed for this engine was a text classification model designed to identify market gap language in customer reviews. Market gap language is defined as language describing a customer's 
