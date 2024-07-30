@@ -198,14 +198,15 @@ This model was built using XGBoost in combination with several embedding and ana
   - BERT embeddings from a fine-tuned, pretrained BERT model
   
 #### Continuous Bag of Words (CBOW) Model
-For the CBOW model, I trained a Word2Vec model on a dataset of 100,000 customer reviews extracted from the database. This process involved the following steps: 
+For the Continuous Bag of Words (CBOW) model, I implemented a Word2Vec model to generate word embeddings from a corpus of 100,000 customer reviews. The process was 
+as follows:
 
-1.	Data Preparation: Tokenizing and preprocessing the reviews to ensure they were in a suitable format for training.
-2.  Model Training: Training the Word2Vec model with the following parameters:
-    - vector_size=100: The dimensionality of the word vectors.
-    - window=5: The maximum distance between the current and predicted word within a sentence.
-    - min_count=1: Minimum frequency count of words to be included in the training.
-    - sg=0: Specifying the use of the CBOW model.
+  1.  Data Preparation: Tokenized and preprocessed the customer reviews to ensure they were in a clean and standardized format suitable for model training. This step 
+      involved lowercasing, removing punctuation, and filtering out stopwords.
+  2.  Model Training: Trained the Word2Vec model using the CBOW architecture. This architecture predicts the target word based on the context words, enabling the 
+      model to learn meaningful word representations.
+  3.  Feature Extraction: Computed the average vector for each review by averaging the word vectors obtained from the Word2Vec model. These average vectors served as 
+      feature inputs for the subsequent XGBoost model, enhancing its ability to classify text data.
     
 This Word2Vec model provided word-level embeddings that captured the context and semantic relationships between words in the reviews.
 
