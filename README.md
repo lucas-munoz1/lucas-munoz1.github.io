@@ -211,6 +211,16 @@ This Word2Vec model provided word-level embeddings that captured the context and
 
 VISUAL PLACEHOLDER: DIAGRAM SHOWING DATA PREP & WORD2VEC TRAINING PROCESS
 
+#### Sentiment Analysis with TextBlob
+In this text classification model, I employed TextBlob for sentiment analysis to gain insights into the overall sentiment of customer reviews. TextBlob is a simple and powerful library for processing textual data, offering functionalities such as part-of-speech tagging, noun phrase extraction, and sentiment analysis. By extracting the polarity and subjectivity scores provided by TextBlob, I could include these values as features in the classification model, enhancing its ability to identify market gaps and customer desires effectively.
+
+VISUAL PLACEHOLDER: POLARITY & SUBJECTIVTY SCORES EXAMPLE DIAGRAM
+
+#### Part of Speech (POS) & Dependency Tags
+For a deeper understanding of the linguistic structure of customer reviews, I utilized part-of-speech (POS) and dependency (DEP) tags, extracted using SpaCy. POS tags helped identify the grammatical role of each word in a sentence, such as nouns, verbs, adjectives, etc., while DEP tags revealed the relationships between words, showing how they depend on each other in the sentence structure. These tags were crucial in my text classification model, as they provided syntactic context that improved the accuracy of feature extraction. By leveraging POS and DEP tags, the model could better recognize and interpret explicit statements of desire made by customers.
+
+VISUAL PLACEHOLDER: POS & DEP TAGS EXAMPLE DIAGRAM
+
 #### BERT Embeddings
 For BERT embeddings, I fine-tuned a pretrained BERT model on the same dataset of 100,000 customer reviews. The process included:
 
