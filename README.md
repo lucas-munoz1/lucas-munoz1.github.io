@@ -90,11 +90,11 @@ example, if a product title is ‘Mechanical feeling gaming keyboard’, the typ
 To create this model, I extracted a substantial dataset of product titles from the database. Initially, this dataset contained 630 documents, which I expanded to 3245 documents through extensive 
 annotation. The annotation process entailed manually labeling the product titles according to a set of predefined rules, but as this was my first NER model, the rules changed significantly throughout the 
 process. I started ambitiously, looking to extract each products:
-  1. Type 
-  2. Descriptor
-  3. Specification
-  4. Usage
-  5. Target Audience
+  1. Type - the most basic element of the product within the context of a broader category
+  2. Descriptor - The word that gives the product additional meaning
+  3. Specification - Detailed attributes or physical features
+  4. Usage - The intended use of the product
+  5. Target Audience - Words that describe the intended user of the product
 
 However, as I continued, I realized it was necessary to simplify as much as possible to ensure that I could get to the end of the process. The final set of guidelines I came up with was simple: 
   1. Type:
