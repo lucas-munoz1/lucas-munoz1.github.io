@@ -120,9 +120,10 @@ VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
 #### Consistency
 A significant challenge I faced during the annotation process was maintaining consistency across a growing dataset. To address this, I: 
 
-  1.	Kept a detailed record of labeling rules and examples to ensure consistent annotations. 
-  2.	Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the model’s performance in real- 
-      time, providing valuable insights for further improvements and speeding up the annotation process.
+  -  Kept a detailed record of labeling rules and examples to ensure consistent annotations.
+  -  Implemented auto labeling by hosting the latest version of the model on a Flask web server and connecting it to Doccano. This allowed me to assess the 
+     model’s performance in real- 
+     time, providing valuable insights for further improvements and speeding up the annotation process.
 
 VISUAL PLACEHOLDER: AUTO LABELING GIF SPLIT – ONE SIDE SHOWING LABELING – OTHER SHOWING TERMINAL OUTPUT 
 
