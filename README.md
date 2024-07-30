@@ -70,7 +70,8 @@ Figure X shows the link collection script in action, navigating through each cat
 After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product 
 names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed.
 
-![Aliexpress product GIF 2](https://github.com/user-attachments/assets/5f5f3f91-ce1b-407a-ab31-ad3117ee6c9a)
+![aliexpress product gif](https://github.com/user-attachments/assets/2b716a70-2bd8-4b93-aae1-8427233e3a55)
+
 VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
 
 Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data.
