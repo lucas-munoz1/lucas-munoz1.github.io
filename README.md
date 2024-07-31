@@ -62,7 +62,7 @@ categories. To address this, I created two scrapers for Amazon and Aliexpress, t
 for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process.
 
 <video width="600" controls>
-  <source src="media/aliexpress product vid.mp4" type="video/mp4">
+  <source src="media/aliexpress_vid.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
