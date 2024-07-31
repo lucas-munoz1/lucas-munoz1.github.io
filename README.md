@@ -62,7 +62,7 @@ categories. To address this, I created two scrapers for Amazon and Aliexpress, t
 for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process.
 
 <video width="320" height="240" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/lucas-munoz1/lucas-munoz1.github.io/raw/main/media/AE_scrape_example.mp4">
+  <source type="video/mp4" src="/media/AE_scrape_example.mp4">
 </video>
 
 VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
