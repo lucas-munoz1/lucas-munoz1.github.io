@@ -66,6 +66,12 @@ for single product pages, allowed me to collect my first dataset, which was used
   Your browser does not support the video tag.
 </video>
 
+
+
+https://github.com/user-attachments/assets/2c555b3a-02b3-4264-8a9a-f3b632868c9b
+
+
+
 VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
 
 Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
