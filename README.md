@@ -61,6 +61,10 @@ First, I needed to collect data specifically for modeling. In order to make a mo
 categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes 
 for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process.
 
+<video width="320" height="240" controls loop="" muted = "" autoplay="">
+  <source src="https://github.com/lucas-munoz1/lucas-munoz1.github.io/raw/main/media/AE_scrape_example.mp4">
+</video>
+
 VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION - ALIEXPRESS
 
 Figure X shows the link collection script in action, navigating through each category, and storing the product links that it finds. 
