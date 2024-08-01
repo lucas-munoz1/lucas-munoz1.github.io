@@ -43,14 +43,15 @@ After creating the relational schema shown in figure 1, I used DBeaver to create
 scripts to the database, I wrote a series of functions that used the Psycopg2 library and SQL to upload data to the right tables, as shown in figure 2. Data scraping will be discussed in depth in the next 
 section.
 
-VISUAL PLACEHOLDER: DATABASE PSYCOPG2 FUNCTIONS
+_Figure 2: Example SQL/Pyscopg2 Functions_
+![Datbase import functions but better](https://github.com/user-attachments/assets/75e82c68-79bd-4231-bf6d-3372a1b98be1)
 
-Finally, figures 3 and 4 show the first five rows of both the product and customer review tables. 
+Figure 2 shows a portion of the database upload functions used in the data collection process. These functions were crucial to properly handling the movement of data to and from the database. Lastly, figures 3 and 4 show the first five rows of both the product and customer review tables. 
 
-_Figure 2: First Five Products in Database_
+_Figure 3: First Five Products in Database_
 ![db product query](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/5f162dee-513e-4797-87ba-3cda8781cfcd)
 
-_Figure 3: First Five Customer Reviews in Database_
+_Figure 4: First Five Customer Reviews in Database_
 ![db custreview query](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/ff57822b-33b4-40d0-ae81-f3298f0fb1f1)
 
 ## Data Scraping {#scraping}
@@ -65,24 +66,27 @@ categories. To address this, I created two scrapers for Amazon and Aliexpress, t
 for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process.
 
 
-_Figure 4: AliExpress Scraping Example_
+_Figure 5: AliExpress Scraping Example_
 <video width="100%" controls loop="" muted = "" autoplay="">
   <source type="video/mp4" src="/media/AE_scrape_example.mp4">
 </video>
 
-Figure 4 shows the fully automated process of collecting product links. The python script starts by locating the category dropdown, then navigates to the first category link. From here, it moves to each subcategory, and collects and stores all product links located on the first page. For the sake of file size, this video was sped up to 4x speed. 
+
+Figure 5 shows the fully automated process of collecting product links. The python script starts by locating the category dropdown, then navigates to the first category link. From here, it moves to each subcategory, and collects and stores all product links located on the first page. For the sake of file size, this video was sped up to 4x speed. 
 
 ### Data for Analysis 
    
 After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product 
 names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed.
 
-_Figure 5: Amazon Scraping Example_
+
+_Figure 6: Amazon Scraping Example_
 <video width="100%" controls loop="" muted = "" autoplay="">
   <source type="video/mp4" src="/media/AM_scrape_example.mp4">
 </video>
 
-Figure 5 depicts the fully automated process of collecting product and customer review data. It starts by searching for the given product names, then it finds and stores links to 10 products with over 50 
+
+Figure 6 depicts the fully automated process of collecting product and customer review data. It starts by searching for the given product names, then it finds and stores links to 10 products with over 50 
 customer reviews. Finally, it navigates to each product page, locates and stores the product information, and as many customer reviews as Amazon displays. For the sake of file size, this video was sped up 
 to 4x speed.
 
