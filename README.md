@@ -92,7 +92,7 @@ customer reviews. Finally, it navigates to each product page, locates and stores
 was sped up to 4x speed.
 
 _Figure 7: Data Collection Flowchart_
-![Data Collection Flowchart - Frame 1 (1)](https://github.com/user-attachments/assets/2685a9f9-992a-4518-a97e-26aef5d51461)
+![Data Collection Flowchart](https://github.com/user-attachments/assets/04e2f1d8-02bd-4475-bac7-676fc1e94f92)
 
 Lastly, figure 7 describes how the scraping scripts utilize Selenium and BeautifulSoup to locate and collect the necessary product data. 
 
