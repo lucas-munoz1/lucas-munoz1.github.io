@@ -67,16 +67,21 @@ _Figure 4: AliExpress Scraping Example_
   <source type="video/mp4" src="/media/AE_scrape_example.mp4">
 </video>
 
-Figure 4 shows the fully automated process of collecting product links. The video starts by locating the category dropdown, then navigates to the first category link. From here, it moves to each subcategory, and collects and stores all products located on the first page. 
+Figure 4 shows the fully automated process of collecting product links. The python script starts by locating the category dropdown, then navigates to the first category link. From here, it moves to each subcategory, and collects and stores all product links located on the first page. For the sake of file size, this video was sped up to 4x speed. 
 
 ### Data for Analysis 
    
 After modeling was completed, I needed a way to collect data specific to products I was interested in analyzing. To address this, I created a scraper to search on Amazon for manually entered product 
 names and collect an arbitrary number of products and customer reviews. This script allowed me to collect new datasets as needed.
 
-VISUAL PLACEHOLDER: GIF OF SCRAPING IN ACTION – AMAZON
+_Figure 5: Amazon Scraping Example_
+<video width="100%" controls loop="" muted = "" autoplay="">
+  <source type="video/mp4" src="/media/AM_scrape_example.mp4">
+</video>
 
-Figure X depicts the Amazon data collection script in action, navigating to the search results of a given product, collecting and storing product data.
+Figure 5 depicts the fully automated process of collecting product and customer review data. It starts by searching for the given product names, then it finds and stores links to 10 products with over 50 
+customer reviews. Finally, it navigates to each product page, locates and stores the product information, and as many customer reviews as Amazon displays. For the sake of file size, this video was sped up 
+to 4x speed.
 
 
 VISUAL PLACEHOLDER: FLOWCHART OF THE 2 DATA COLLECTION PROCESSES
