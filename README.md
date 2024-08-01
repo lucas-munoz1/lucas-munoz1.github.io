@@ -91,10 +91,10 @@ Figure 6 depicts the fully automated process of collecting product and customer 
 customer reviews. Finally, it navigates to each product page, locates and stores the product information, and as many customer reviews as Amazon displays. For the sake of reducing file size, this video 
 was sped up to 4x speed.
 
+_Figure 7: Data Collection Flowchart_
+![Data Collection Flowchart - Frame 1 (1)](https://github.com/user-attachments/assets/2685a9f9-992a-4518-a97e-26aef5d51461)
 
-VISUAL PLACEHOLDER: FLOWCHART OF THE 2 DATA COLLECTION PROCESSES
-
-Figure X visualizes the movement of the data collected….. blah blah blah
+Lastly, figure 7 describes how the scraping scripts utilize Selenium and BeautifulSoup to locate and collect the necessary product data. 
 
 ## Modeling {#modeling}
 Following the creation and initial population of the database, it came time to develop machine learning models that would shape the analysis portion of this engine. 
