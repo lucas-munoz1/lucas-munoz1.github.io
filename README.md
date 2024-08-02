@@ -115,8 +115,7 @@ process. I started ambitiously, looking to extract each products:
 
 However, as I continued, I realized it was necessary to simplify as much as possible to ensure that I could get to the end of the process in a reasonable 
 amount of time. The final set of guidelines I came up with was simple: 
-  1. Type - The word or words that specify what the product is, within the context of a broader category; there can be multiple types in a product; the   
-     type should always be describing the product, not what the product is made up of or made from. 
+  1. Type - The word or words that specify what the product is, within the context of a broader category; there can be multiple types in a product; the type should always be describing the product, not what the product is made up of or made from. 
 
 #### Reformatting
 For labeling, I decided to use Doccano, an open-source annotation tool. However, the data extracted from the database came in JSON, whereas Doccano accepts 
