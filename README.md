@@ -113,16 +113,14 @@ process. I started ambitiously, looking to extract each products:
   4. Usage - The intended use of the product
   5. Target Audience - Words that describe the intended user of the product
 
-However, as I continued, I realized it was necessary to simplify as much as possible to ensure that I could get to the end of the process in a reasonable amount of time. The final set of guidelines I came up with was simple: 
-  1. Type:
-     -  Label the word or words that specify what the product is, within the context of a broader category
-     -  This is similar to a subcategory (e.g., ‘Bike’ subcategory of ‘Outdoors’, ‘Shirt’ and ‘Shoe’ is a subcategory for ‘Clothing’.)
-     -  There can be multiple types in a product. If a product is a ‘Bike kit’, and it has ‘Two size 2 wheels’ and a ‘Bike pump’ in the kit, then all of those items would be descriptors + types. However, 
-        the type should always be describing the product, not what the product is made from or made up of. 
+However, as I continued, I realized it was necessary to simplify as much as possible to ensure that I could get to the end of the process in a reasonable 
+amount of time. The final set of guidelines I came up with was simple: 
+  1. Type - The word or words that specify what the product is, within the context of a broader category; there can be multiple types in a product; the   
+     type should always be describing the product, not what the product is made up of or made from. 
 
 #### Reformatting
-For labeling, I decided to use Doccano, an open-source annotation tool. However, the data extracted from the database came in JSON, whereas Doccano accepts JSON Lines. To address this, I wrote a Python 
-script that converted JSON documents into JSON Lines. 
+For labeling, I decided to use Doccano, an open-source annotation tool. However, the data extracted from the database came in JSON, whereas Doccano accepts 
+JSON Lines. To address this, I wrote a Python script that converted JSON documents into JSON Lines. 
 
 VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM JSON TO JSON LINES  
 
