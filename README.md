@@ -122,7 +122,10 @@ amount of time. The final set of guidelines I came up with was simple:
 For labeling, I decided to use Doccano, an open-source annotation tool. However, the data extracted from the database came in JSON, whereas Doccano accepts 
 JSON Lines. To address this, I wrote a Python script that converted JSON documents into JSON Lines. 
 
-VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM JSON TO JSON LINES  
+_Figure 8: Json to Json Lines Function_
+![json to jsonl](https://github.com/user-attachments/assets/e67c4be5-c794-4a8c-8a89-703f7955a328)
+
+Figure 8 shows the function used to convert the JSON document pulled from the database into a Json Lines format, so it will be accepted by Doccano. 
 
 Similarly, after the annotation was done, I had to reformat the JSON Lines documents into SpaCy's required format. This involved:
 
