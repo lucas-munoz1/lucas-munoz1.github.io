@@ -20,6 +20,19 @@ analysis instead of the actual files.
 Lastly, the Kaggle Housing data analysis project was completed in March of 2023 as part of a machine learning class. I was given a large housing dataset, and tasked with cleaning and modeling to predict 
 housing prices based on physical attributes of a house. As this dataset is publicly available, I have attached both the dataset, my code files, and a link to the data source to this page. 
 
+<div style="display: flex; gap: 20px;">
+  <a href="#" style="text-decoration: none;">
+    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+      <span style="font-weight: bold; color: #333;">Ecommerce Product Analysis Engine</span>
+    </div>
+  </a>
+  <a href="#" style="text-decoration: none;">
+    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+      <span style="font-weight: bold; color: #333;">Kaggle Housing Predictions</span>
+    </div>
+  </a>
+</div>
+
 # Ecommerce Product Analysis Engine {#engine}
 ## Summary {#summary1}
 The primary objective of this project was to develop an engine capable of identifying market gaps and deriving specific insights into the product attributes driving the sales of various e-commerce 
