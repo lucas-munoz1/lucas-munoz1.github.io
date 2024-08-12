@@ -7,47 +7,25 @@ interest in machine learning and data analytics. My primary skill set includes P
 Currently, I'm seeking part-time opportunities that complement my entrepreneurial journey towards building an eCommerce-based business, which I discuss extensively in this portfolio. Feel free to explore my projects and reach out if you'd like to collaborate or learn more!
 
 # Projects {#projects}
-
-<div style="width: 100%; display: flex; flex-direction: column; gap: 20px; padding: 20px 20px 20px 0px; box-sizing: border-box;">
-  <div style="display: flex; gap: 20px;">
-    <a href="#" style="text-decoration: none; width: 50%;">
-      <div class="square">
-        <div class="square-content">
-          Ecommerce Product Analysis Engine
-          <ul style="margin: 0; padding-left: 20px;">
-            <li>Database</li>
-            <li>Data scraping</li>
-            <li>Named Entity Recognition</li>
-            <li>Sentiment Analysis</li>
-            <li>Text Classification with BERT</li>
-          </ul>
-        </div>
-      </div>
-    </a>
-    <div class="text-content">
-      <p>The Ecommerce Analysis Engine was started in November 2023 as an effort to incorporate data-driven decisions into a potential ecommerce business. Its purpose is to collect and analyze online 
-product data from sites like Amazon and AliExpress.</p>
+<div class="container">
+  <div class="gradient-cards">
+    <div class="card">
+      <a href="#" class="container-card bg-green-box">
+        <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Your SVG code here -->
+        </svg>
+        <p class="card-title">Ecommerce Product Analysis Engine</p>
+        <p class="card-description">An advanced toolset for data-driven product insights, leveraging database integration, data scraping, and machine learning.</p>
+      </a>
     </div>
-  </div>
-  <div style="display: flex; gap: 20px;">
-    <a href="#" style="text-decoration: none; width: 50%;">
-      <div class="square">
-        <div class="square-content">
-          Kaggle Housing Price Predictions
-          <ul style="margin: 0; padding-left: 20px;">
-            <li>Data cleaning</li>
-            <li>Feature Engineering</li>
-            <li>Forward Feature Selection</li>
-            <li>Full Ridge Regression</li>
-            <li>Full Lasso Regression</li>
-            <li>Random Forest, Bagging, Boosting</li>
-          </ul>
-        </div>
-      </div>
-    </a>
-    <div class="text-content">
-      <p> Secondly, the Kaggle Housing data analysis project was completed in my Machine Learning class during March of 2023. The purpose of this project was to create machine learning models capable of 
-determining which characteristics of a house contribute to its final sale price.</p>
+    <div class="card">
+      <a href="#" class="container-card bg-blue-box">
+        <svg width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Your SVG code here -->
+        </svg>
+        <p class="card-title">Kaggle Housing Price Predictions</p>
+        <p class="card-description">A comprehensive analysis and prediction engine for housing prices using advanced regression techniques and machine learning models.</p>
+      </a>
     </div>
   </div>
 </div>
