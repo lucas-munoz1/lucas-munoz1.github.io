@@ -18,24 +18,33 @@
 
 .square-content {
     position: absolute;
-    top: 0;  /* Align text to the top */
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;  /* Align content to the top */
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-start;  /* Align content to the left */
+    align-items: flex-start;
     color: #FFFFFF;
     font-weight: bold;
     text-align: left;
-    padding: 20px;  /* Add padding all around */
-    box-sizing: border-box;  /* Include padding in the width calculation */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .square-content ul {
     color: lightgray;
-    padding-left: 20px;  /* Ensure consistent padding for list items */
+    padding-left: 20px;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
 }
 
 @keyframes fadeGradient {
