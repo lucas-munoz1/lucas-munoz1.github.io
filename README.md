@@ -16,14 +16,14 @@ modeling to predict housing prices based on physical attributes of a house. As t
 repository. 
 
 
-<div style="display: flex; gap: 20px;">
-  <a href="https://your-portfolio.github.io/project1" style="text-decoration: none;">
-    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+<div style="width: 100%; display: flex; gap: 20px; padding: 10px; box-sizing: border-box;">
+  <a href="https://your-portfolio.github.io/project1" style="text-decoration: none; flex: 1;">
+    <div style="height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc; padding: 10px; box-sizing: border-box;">
       <span style="font-weight: bold; color: #333;">Project 1</span>
     </div>
   </a>
-  <a href="https://your-portfolio.github.io/project2" style="text-decoration: none;">
-    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+  <a href="https://your-portfolio.github.io/project2" style="text-decoration: none; flex: 1;">
+    <div style="height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc; padding: 10px; box-sizing: border-box;">
       <span style="font-weight: bold; color: #333;">Project 2</span>
     </div>
   </a>
