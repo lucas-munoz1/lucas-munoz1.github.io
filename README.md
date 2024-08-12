@@ -17,17 +17,13 @@ repository.
 
 <div width=100%; gap: 20px;">
   
-  <a href="#" style="text-decoration: none;">
-    <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
-      <span style="font-weight: bold; color: #333;">Ecommerce Product Analysis Engine</span>
-    </div>
-  </a>
+  <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+    <span style="font-weight: bold; color: #333;">Ecommerce Product Analysis Engine</span>
+  </div>
   
-  <a href="#" style="text-decoration: none;">
-    <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
-      <span style="font-weight: bold; color: #333;">Kaggle Housing Project</span>
-    </div>
-  </a>
+  <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+    <span style="font-weight: bold; color: #333;">Kaggle Housing Project</span>
+  </div>
   
 </div>
 
