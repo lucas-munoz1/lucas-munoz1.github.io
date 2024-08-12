@@ -16,13 +16,11 @@
     <div class="square">
       <div class="square-content">
         Ecommerce Product Analysis Engine
-        <ul style="margin: 0; padding-left: 20px;">
-          <li>Database</li>
-          <li>Data scraping</li>
-          <li>Named Entity Recognition</li>
-          <li>Sentiment Analysis</li>
-          <li>Text Classification with BERT</li>
-        </ul>
+        - Database
+        - Data scraping
+        - Named Entity Recognition
+        - Sentiment Analysis
+        - Text Classification with BERT
       </div>
     </div>
   </a>
