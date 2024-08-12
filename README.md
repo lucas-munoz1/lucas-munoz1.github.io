@@ -25,7 +25,8 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
       </div>
     </a>
     <div class="text-content">
-      <p>The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven decisions into a potential ecommerce business.</p>
+      <p>The Ecommerce Analysis Engine was started in November 2023 as an effort to incorporate data-driven decisions into a potential ecommerce business. Its purpose is to collect and analyze online 
+product data from sites like Amazon and AliExpress.</p>
     </div>
   </div>
   <div style="display: flex; gap: 20px;">
@@ -45,7 +46,8 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
       </div>
     </a>
     <div class="text-content">
-      <p> Secondly, the Kaggle Housing data analysis project was completed in my Machine Learning class during March of 2023, where I was given a dataset containing house sale prices and physical characteristics, and I was tasked with cleaning, and modeling the data.</p>
+      <p> Secondly, the Kaggle Housing data analysis project was completed in my Machine Learning class during March of 2023. The purpose of this project was to create machine learning models capable of 
+determining which characteristics of a house contribute to its final sale price.</p>
     </div>
   </div>
 </div>
