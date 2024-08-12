@@ -1,14 +1,3 @@
-# Table of Contents
-- [About](#about)
-- [Projects](#projects)
-- [Ecommerce Product Analysis Engine](#engine)
-  - [Summary](#summary1)
-  - [Data & Database Overview](#dataoverview1)
-  - [Data Scraping](#scraping)
-  - [Modeling](#modeling)
-- [KIPP Texas Data Analysis](#kipp)
-- [Kaggle Housing Data Analysis](#kaggle)
-
 # About {#about}
 
 Hi, I'm Lucas!
@@ -61,6 +50,16 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
   </div>
 </div>
 
+# Table of Contents
+- [About](#about)
+- [Projects](#projects)
+- [Ecommerce Product Analysis Engine](#engine)
+  - [Summary](#summary1)
+  - [Data & Database Overview](#dataoverview1)
+  - [Data Scraping](#scraping)
+  - [Modeling](#modeling)
+- [KIPP Texas Data Analysis](#kipp)
+- [Kaggle Housing Data Analysis](#kaggle)
 
 # Ecommerce Product Analysis Engine {#engine}
 ## Summary {#summary1}
