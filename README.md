@@ -15,12 +15,14 @@
   <a href="#" style="text-decoration: none; flex: 1;">
     <div class="square">
       <div class="square-content">
-        Ecommerce Product Analysis Engine<br>
-          - Database<br>
-          - Data scraping<br>
-          - Named Entity Recognition<br>
-          - Sentiment Analysis<br>
-          - Text Classification with BERT<br>
+        Ecommerce Product Analysis Engine
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Database</li>
+          <li>Data scraping</li>
+          <li>Named Entity Recognition</li>
+          <li>Sentiment Analysis</li>
+          <li>Text Classification with BERT</li>
+        </ul>
       </div>
     </div>
   </a>
