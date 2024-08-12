@@ -9,6 +9,7 @@
 .container-card {
   position: relative;
   width: 50%;
+  height:50%;
   border: 2px solid transparent;
   // background: linear-gradient(71deg, #080509, #1a171c, #080509);
   background-clip: padding-box;
@@ -28,16 +29,17 @@
 }
 
 .card-title {
-  font-weight: bold;
+  font-weight: 600;
   color: white;
   letter-spacing: -0.02em;
   line-height: 40px;
   font-style: normal;
+  font-size: 20px;
   padding-bottom: 8px;
 }
 
 .card-description {
-  font-weight: normal;
+  font-weight: 600;
   line-height: 32px;
   color: hsla(0, 0%, 100%, 0.5);
   max-width: 470px;
