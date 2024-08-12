@@ -8,7 +8,7 @@
 
 .container-card {
   position: relative;
-  width: 65%;
+  width: 50%;
   border: 2px solid transparent;
   // background: linear-gradient(71deg, #080509, #1a171c, #080509);
   background-clip: padding-box;
@@ -33,7 +33,6 @@
   letter-spacing: -0.02em;
   line-height: 40px;
   font-style: normal;
-  font-size: 28px;
   padding-bottom: 8px;
 }
 
@@ -41,6 +40,5 @@
   font-weight: normal;
   line-height: 32px;
   color: hsla(0, 0%, 100%, 0.5);
-  font-size: 16px;
   max-width: 470px;
 }
