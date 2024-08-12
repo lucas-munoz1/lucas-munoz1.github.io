@@ -18,21 +18,24 @@
 
 .square-content {
     position: absolute;
-    top: 0;
+    top: 0;  /* Align text to the top */
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;  /* Align content to the top */
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;  /* Align content to the left */
     color: #FFFFFF;
     font-weight: bold;
     text-align: left;
+    padding: 20px;  /* Add padding all around */
+    box-sizing: border-box;  /* Include padding in the width calculation */
 }
 
 .square-content ul {
-    color: lightgray; 
+    color: lightgray;
+    padding-left: 20px;  /* Ensure consistent padding for list items */
 }
 
 @keyframes fadeGradient {
