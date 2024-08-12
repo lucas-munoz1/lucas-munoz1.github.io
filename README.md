@@ -8,7 +8,7 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
 
 # Projects {#projects}
 
-<div style="width: 100%; display: flex; flex-direction: column; gap: 20px; padding: 5px; box-sizing: border-box;">
+<div style="width: 100%; display: flex; flex-direction: column; gap: 20px; padding: 20px 20px 20px 0px; box-sizing: border-box;">
   <div style="display: flex; gap: 20px;">
     <a href="#" style="text-decoration: none; width: 50%;">
       <div class="square">
