@@ -11,8 +11,8 @@
 # About {#about}
 
 
-<div style="width: 100%; display: flex; gap: 20px; padding: 10px; box-sizing: border-box;">
-  <a href="#" style="text-decoration: none; flex: 1;">
+<div style="width: 100%; display: flex; flex-direction: column; gap: 20px; padding: 10px; box-sizing: border-box;">
+  <a href="#" style="text-decoration: none; width: 50%; align-self: center;">
     <div class="square">
       <div class="square-content">
         Ecommerce Product Analysis Engine
@@ -26,7 +26,7 @@
       </div>
     </div>
   </a>
-  <a href="#" style="text-decoration: none; flex: 1;">
+  <a href="#" style="text-decoration: none; width: 50%; align-self: center;">
     <div class="square">
       <div class="square-content">
         Kaggle Housing Price Predictions
