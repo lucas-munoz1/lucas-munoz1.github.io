@@ -13,16 +13,16 @@
 
 <div style="width: 100%; display: flex; gap: 20px; padding: 10px; box-sizing: border-box;">
   <a href="#" style="text-decoration: none; flex: 1;">
-    <div style="position: relative; width: 100%; padding-bottom: 100%; background-color: #f0f0f0; border: 1px solid #ccc; box-sizing: border-box;">
-      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <span style="font-weight: bold; color: #333; text-align: center;">Ecommerce Product Analysis Engine</span>
+    <div class="square">
+      <div class="square-content">
+        Ecommerce Product Analysis Engine
       </div>
     </div>
   </a>
   <a href="#" style="text-decoration: none; flex: 1;">
-    <div style="position: relative; width: 100%; padding-bottom: 100%; background-color: #f0f0f0; border: 1px solid #ccc; box-sizing: border-box;">
-      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <span style="font-weight: bold; color: #333; text-align: center;">Kaggle Housing Price Predictions</span>
+    <div class="square">
+      <div class="square-content">
+        Kaggle Housing Price Predictions
       </div>
     </div>
   </a>
