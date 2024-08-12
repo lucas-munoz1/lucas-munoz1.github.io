@@ -5,67 +5,17 @@
 .section {
   width: 600px !important;
 }
-.square {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    background: linear-gradient(45deg, #27038C, #7258B9, #27038C, #0097F5);
-    background-size: 300% 300%;
-    animation: fadeGradient 10s ease-in-out infinite;
-}
-
-.square-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #FFFFFF;
-    font-weight: bold;
-    text-align: left;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.square-content ul {
-    color: lightgray;
-    padding-left: 20px;
-}
-
-.text-content {
-    flex: 1;
-    display: flex;
-    align-items: left;
-}
-
-@keyframes fadeGradient {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
 
 .container {
-  width: 1200px !important;
+  width: 100%;
   padding: 0 !important;
   margin-right: auto;
   margin-left: auto;
 }
 
 .gradient-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 32px;
   padding: 30px;
 }
