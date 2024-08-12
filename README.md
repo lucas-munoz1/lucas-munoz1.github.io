@@ -15,17 +15,20 @@ uploading the code. Secondly, the Kaggle Housing data analysis project was compl
 modeling to predict housing prices based on physical attributes of a house. As this dataset is publicly available, I have attached both the dataset, my code files, and a link to the data source to this 
 repository. 
 
-<div width=100%; gap: 20px;">
-  
-  <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
-    <span style="font-weight: bold; color: #333;">Ecommerce Product Analysis Engine</span>
-  </div>
-  
-  <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
-    <span style="font-weight: bold; color: #333;">Kaggle Housing Project</span>
-  </div>
-  
+
+<div style="display: flex; gap: 20px;">
+  <a href="https://your-portfolio.github.io/project1" style="text-decoration: none;">
+    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+      <span style="font-weight: bold; color: #333;">Project 1</span>
+    </div>
+  </a>
+  <a href="https://your-portfolio.github.io/project2" style="text-decoration: none;">
+    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+      <span style="font-weight: bold; color: #333;">Project 2</span>
+    </div>
+  </a>
 </div>
+
 
 # Ecommerce Product Analysis Engine {#engine}
 ## Summary {#summary1}
