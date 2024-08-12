@@ -9,26 +9,21 @@
 - [Kaggle Housing Data Analysis](#kaggle)
 
 # About {#about}
-This portfolio showcases three projects completed during my undergraduate studies. The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven 
-decisions into a potential ecommerce business. To preserve the confidentiality and integrity of the  processes involved, I have included figures depicting the processes involved in lieu of directly 
-uploading the code.
+This portfolio showcases two projects completed during my undergraduate studies. The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven 
+decisions into a potential ecommerce business. To preserve the confidentiality and integrity of the processes involved, I have included figures depicting the processes involved in instead of directly 
+uploading the code. Secondly, the Kaggle Housing data analysis project was completed in March of 2023 as part of a machine learning class. I was given a large housing dataset, and tasked with cleaning and 
+modeling to predict housing prices based on physical attributes of a house. As this dataset is publicly available, I have attached both the dataset, my code files, and a link to the data source to this 
+repository. 
 
-The second project, KIPP Texas Data Analysis, was undertaken as part of a consulting class in the Spring of 2024. My team and I were tasked with analyzing a substantial dataset provided by KIPP Texas, 
-comprising over 200,000 entries, to identify demographic factors influencing test score outcomes. Similarly, to ensure the confidentiality of the dataset, I have included screenshots of the code and 
-analysis instead of the actual files.
-
-Lastly, the Kaggle Housing data analysis project was completed in March of 2023 as part of a machine learning class. I was given a large housing dataset, and tasked with cleaning and modeling to predict 
-housing prices based on physical attributes of a house. As this dataset is publicly available, I have attached both the dataset, my code files, and a link to the data source to this page. 
-
-<div style="display: flex; gap: 20px;">
+<div width=100%; gap: 20px;">
   <a href="#" style="text-decoration: none;">
-    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+    <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
       <span style="font-weight: bold; color: #333;">Ecommerce Product Analysis Engine</span>
     </div>
   </a>
   <a href="#" style="text-decoration: none;">
-    <div style="width: 150px; height: 150px; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
-      <span style="font-weight: bold; color: #333;">Kaggle Housing Predictions</span>
+    <div style="width: 50%; height: 100%; background-color: #CECECE; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;">
+      <span style="font-weight: bold; color: #333;">Kaggle Housing Project</span>
     </div>
   </a>
 </div>
