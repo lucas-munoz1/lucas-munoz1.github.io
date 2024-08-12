@@ -7,6 +7,7 @@ interest in machine learning and data analytics. My primary skill set includes P
 Currently, I'm seeking part-time opportunities that complement my entrepreneurial journey towards building an eCommerce-based business, which I discuss extensively in this portfolio. Feel free to explore my projects and reach out if you'd like to collaborate or learn more!
 
 # Projects {#projects}
+
 <div class="container">
   <div class="gradient-cards">
     <div class="card">
