@@ -9,26 +9,29 @@
 - [Kaggle Housing Data Analysis](#kaggle)
 
 # About {#about}
-This portfolio showcases two projects completed during my undergraduate studies. The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven 
-decisions into a potential ecommerce business. To preserve the confidentiality and integrity of the processes involved, I have included figures depicting the processes involved in instead of directly 
-uploading the code. Secondly, the Kaggle Housing data analysis project was completed in March of 2023 as part of a machine learning class. I was given a large housing dataset, and tasked with cleaning and 
-modeling to predict housing prices based on physical attributes of a house. As this dataset is publicly available, I have attached both the dataset, my code files, and a link to the data source to this 
-repository. 
 
 
 <div style="width: 100%; display: flex; gap: 20px; padding: 10px; box-sizing: border-box;">
-  <a href="https://your-portfolio.github.io/project1" style="text-decoration: none; flex: 1;">
-    <div style="background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc; padding: 10px; box-sizing: border-box;">
-      <span style="font-weight: bold; color: #333;">Ecommerce Product Analysis Engine</span>
+  <a href="#" style="text-decoration: none; flex: 1;">
+    <div style="position: relative; width: 100%; padding-bottom: 100%; background-color: #f0f0f0; border: 1px solid #ccc; box-sizing: border-box;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <span style="font-weight: bold; color: #333; text-align: center;">Ecommerce Product Analysis Engine</span>
+      </div>
     </div>
   </a>
-  <a href="https://your-portfolio.github.io/project2" style="text-decoration: none; flex: 1;">
-    <div style="background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc; padding: 10px; box-sizing: border-box;">
-      <span style="font-weight: bold; color: #333;">Kaggle Housing Price Predictions</span>
+  <a href="#" style="text-decoration: none; flex: 1;">
+    <div style="position: relative; width: 100%; padding-bottom: 100%; background-color: #f0f0f0; border: 1px solid #ccc; box-sizing: border-box;">
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <span style="font-weight: bold; color: #333; text-align: center;">Kaggle Housing Price Predictions</span>
+      </div>
     </div>
   </a>
 </div>
 
+
+This portfolio showcases two projects completed during my undergraduate studies. The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven 
+decisions into a potential ecommerce business. Secondly, the Kaggle Housing data analysis project was completed in March of 2023, and involved a housing dataset from Kaggle, where I was tasked with 
+predicting housing prices based on physical attributes of a house. 
 
 # Ecommerce Product Analysis Engine {#engine}
 ## Summary {#summary1}
