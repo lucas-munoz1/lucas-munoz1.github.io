@@ -1,5 +1,6 @@
 # Table of Contents
 - [About](#about)
+- [Projects](#projects)
 - [Ecommerce Product Analysis Engine](#engine)
   - [Summary](#summary1)
   - [Data & Database Overview](#dataoverview1)
@@ -10,6 +11,13 @@
 
 # About {#about}
 
+Hi, I'm Lucas!
+I recently graduated from Trinity University in San Antonio with a Bachelor of Science in Business Analytics & Technology. I'm passionate about using data to solve complex problems, with a particular 
+interest in machine learning and data analytics. My primary skill set includes Python, R, and SQL, alongside experience in other technologies like JavaScript, HTML/CSS, and Django.
+
+Currently, I'm seeking part-time opportunities that complement my entrepreneurial journey towards building an eCommerce-based business, which I discuss extensively in this portfolio. Feel free to explore my projects and reach out if you'd like to collaborate or learn more!
+
+# Projects {#projects}
 
 <div style="width: 100%; display: flex; flex-direction: column; gap: 20px; box-sizing: border-box;">
   <div style="display: flex; gap: 20px;">
@@ -28,7 +36,7 @@
       </div>
     </a>
     <div class="text-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget justo euismod, cursus enim in, faucibus velit.</p>
+      <p>The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven decisions into a potential ecommerce business.</p>
     </div>
   </div>
   <div style="display: flex; gap: 20px;">
@@ -48,15 +56,11 @@
       </div>
     </a>
     <div class="text-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget justo euismod, cursus enim in, faucibus velit.</p>
+      <p> Secondly, the Kaggle Housing data analysis project was completed in my Machine Learning class during March of 2023, where I was given a dataset containing house sale prices and physical characteristics, and I was tasked with cleaning, and modeling the data.</p>
     </div>
   </div>
 </div>
 
-
-This portfolio showcases two projects completed during my undergraduate studies. The first project, the Ecommerce Analysis Engine, was started in November 2023 as an effort to incorporate data-driven 
-decisions into a potential ecommerce business. Secondly, the Kaggle Housing data analysis project was completed in March of 2023, and involved a housing dataset from Kaggle, where I was tasked with 
-predicting housing prices based on physical attributes of a house. 
 
 # Ecommerce Product Analysis Engine {#engine}
 ## Summary {#summary1}
