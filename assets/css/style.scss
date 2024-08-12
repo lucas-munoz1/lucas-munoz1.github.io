@@ -16,7 +16,7 @@
 .gradient-cards {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   gap: 32px;
   padding: 30px;
 }
