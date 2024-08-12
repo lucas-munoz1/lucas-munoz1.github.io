@@ -11,7 +11,7 @@
 # About {#about}
 
 
-<div style="width: 100%; display: flex; flex-direction: column; gap: 20px; padding: 10px; box-sizing: border-box;">
+<div style="width: 100%; display: flex; flex-direction: column; gap: 20px; box-sizing: border-box;">
   <div style="display: flex; gap: 20px;">
     <a href="#" style="text-decoration: none; width: 50%;">
       <div class="square">
