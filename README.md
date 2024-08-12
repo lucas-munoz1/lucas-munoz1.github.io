@@ -14,7 +14,13 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
       <div class="container-card bg-green-box">
         <a href="#">
           <p class="card-title">Ecommerce Product Analysis Engine</p>
-          <p class="card-description">An advanced toolset for data-driven product insights, leveraging database integration, data scraping, and machine learning.</p>
+          <ul class="card-description" style="margin: 0; padding-left: 20px;">
+            <li>Database</li>
+            <li>Data scraping</li>
+            <li>Named Entity Recognition</li>
+            <li>Sentiment Analysis</li>
+            <li>Text Classification with BERT</li>
+          </ul>
         </a>
       </div>
     </div>
