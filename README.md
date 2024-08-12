@@ -11,16 +11,20 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
 <div class="container">
   <div class="gradient-cards">
     <div class="card">
-      <a href="#" class="container-card bg-green-box">
-        <p class="card-title">Ecommerce Product Analysis Engine</p>
-        <p class="card-description">An advanced toolset for data-driven product insights, leveraging database integration, data scraping, and machine learning.</p>
-      </a>
+      <div class="container-card bg-green-box">
+        <a href="#">
+          <p class="card-title">Ecommerce Product Analysis Engine</p>
+          <p class="card-description">An advanced toolset for data-driven product insights, leveraging database integration, data scraping, and machine learning.</p>
+        </a>
+      </div>
     </div>
     <div class="card">
-      <a href="#" class="container-card bg-blue-box">
-        <p class="card-title">Kaggle Housing Price Predictions</p>
-        <p class="card-description">A comprehensive analysis and prediction engine for housing prices using advanced regression techniques and machine learning models.</p>
-      </a>
+      <div class="container-card bg-blue-box">
+        <a href="#">
+          <p class="card-title">Kaggle Housing Price Predictions</p>
+          <p class="card-description">A comprehensive analysis and prediction engine for housing prices using advanced regression techniques and machine learning models.</p>
+        </a>
+      </div>
     </div>
   </div>
 </div>
