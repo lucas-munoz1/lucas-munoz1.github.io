@@ -15,7 +15,7 @@
   <a href="#" style="text-decoration: none; flex: 1;">
     <div class="square">
       <div class="square-content">
-        Ecommerce Product Analysis Engine
+        Ecommerce Product Analysis Engine<br>
           - Database<br>
           - Data scraping<br>
           - Named Entity Recognition<br>
