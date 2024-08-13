@@ -15,8 +15,8 @@
 
 .container-card {
   position: relative;
-  width: 100%; /* Use 100% of the parent's width */
-  padding-bottom: 100%; /* Maintain a 1:1 aspect ratio to keep the square shape */
+  width: 50%; /* Use 60% of the parent's width */
+  padding-bottom: 50%; /* Maintain a 1:1 aspect ratio to keep the square shape */
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 45px;
@@ -51,7 +51,6 @@
 }
 
 .container-card > * {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
