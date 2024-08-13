@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ecommerce Product Analysis Engine
+---
+
 # Table of Contents
 - [About](#about)
 - [Ecommerce Product Analysis Engine](#engine)
