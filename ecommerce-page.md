@@ -2,7 +2,7 @@
 layout: default
 title: Ecommerce Product Analysis Engine
 ---
-[Go back](#about)
+<a href="/" class="button">Back to Home</a>
 
 # Table of Contents
   - [Summary](#summary1)
