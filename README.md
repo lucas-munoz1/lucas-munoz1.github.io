@@ -1,4 +1,4 @@
-# About {#about}
+# About 
 
 Hi, I'm Lucas!
 I recently graduated from Trinity University in San Antonio with a Bachelor of Science in Business Analytics & Technology. I'm interested in using data to solve complex problems, with a particular 
