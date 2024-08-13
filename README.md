@@ -10,7 +10,7 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
 
 <div class="card-wrapper">
   <div class="container-card bg-blue-box">
-    <a href="/ecommerce-page.md" class="button">
+    <a href="/ecommerce-page" class="button">
       <p class="card-title">Ecommerce Product Analysis Engine</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
         <li>Database</li>
