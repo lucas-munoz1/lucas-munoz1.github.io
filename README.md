@@ -1,3 +1,7 @@
+---
+title: "Portfolio | About"
+---
+
 # About {#about}
 
 Hi, I'm Lucas!
