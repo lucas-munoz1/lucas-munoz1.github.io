@@ -27,6 +27,18 @@
   z-index: 1; 
 }
 
+.container-card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(8px); /* Adjust the blur intensity */
+  z-index: -1; /* Ensure it doesn’t cover content */
+  border-radius: 25px; /* Match the container's border-radius */
+}
+
 .bg-green-box {
   background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
   background-size: 300% 300%;
