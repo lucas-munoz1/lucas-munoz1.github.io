@@ -2,8 +2,6 @@
 layout: default
 title: Ecommerce Product Analysis Engine
 ---
-<a href="/" class="button">Back to Home</a>
-
 # Table of Contents
   - [Summary](#summary1)
   - [Data & Database Overview](#dataoverview1)
@@ -11,6 +9,8 @@ title: Ecommerce Product Analysis Engine
   - [Named Entity Recognition](#NER)
   - [Sentiment Analysis](#SA)
   - [Text Classification](#class)
+
+<a href="/" class="button">Back to Home</a>
 
 # Ecommerce Product Analysis Engine {#engine}
 ## Summary {#summary1}
