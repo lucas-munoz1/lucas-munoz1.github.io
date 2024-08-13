@@ -4,14 +4,12 @@ title: Ecommerce Product Analysis Engine
 ---
 
 # Table of Contents
-- [About](#about)
-- [Ecommerce Product Analysis Engine](#engine)
   - [Summary](#summary1)
   - [Data & Database Overview](#dataoverview1)
   - [Data Scraping](#scraping)
-  - [Modeling](#modeling)
-- [KIPP Texas Data Analysis](#kipp)
-- [Kaggle Housing Data Analysis](#kaggle)
+  - [Named Entity Recognition](#NER)
+  - [Sentiment Analysis](#SA)
+  - [Text Classification](#class)
 
 # Ecommerce Product Analysis Engine {#engine}
 ## Summary {#summary1}
@@ -92,7 +90,7 @@ Lastly, figure 7 describes how the scraping scripts utilize Selenium and Beautif
 ## Modeling {#modeling}
 Following the creation and initial population of the database, it came time to develop machine learning models that would shape the analysis portion of this engine. 
 
-### NER with SpaCy
+### NER with SpaCy {#NER}
 The first model I created was a Named Entity Recognition model using SpaCy, designed to extract the ‘type’ of a product from its title. A product’s ‘type’ refers to its most fundamental category. For 
 example, if a product title is ‘Mechanical feeling gaming keyboard’, the type would be ‘keyboard’. This model aimed to categorize products effectively for further analysis and comparison. 
 
@@ -148,7 +146,7 @@ VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME
 My goal was to develop a model with an F-score above 0.9. Through iterative training and refinement, I successfully created an NER model that met this benchmark, achieving an F-score of 0.906. This model 
 now serves as a foundational component for organizing and analyzing product titles. Throughout the course of training this model, I learned valuable lessons, usually the hard way. For instance, I did not preprocess the data before annotation, which led to frustrating errors, such as SpaCy failing when it encountered emojis. I made sure to keep these types of lessons in mind as I continued devloping this engine. 
 
-### Sentiment Analysis with SpaCy 
+### Sentiment Analysis with SpaCy {#SA}
 The second model I developed was a sentiment analysis model using SpaCy's textcat component to classify customer review subtitles as positive, neutral, or negative. I opted to use review subtitles instead 
 of full reviews because the subtitles more directly conveyed customers' emotions, whereas the full reviews often contained more detailed content. This model served two primary purposes:
 
@@ -196,7 +194,7 @@ VISUAL PLACEHOLDER: TABLE SHOWING CHANGING METRIC SCORES
 While the model's performance metrics were slightly below my initial goal of 0.9, I was satisfied with the results and decided to proceed to the next model, knowing I could return to improve it later. The 
 most valuable lesson I took away from training this model, was the power of synthetic data. Using it subtly, and in the right spots, had produced excellent results.
 
-### Text Classification with BERT 
+### Text Classification with BERT {#class}
 The final model I developed for this engine was a text classification model designed to identify market gap language in customer reviews. Market gap language is defined as language describing a customer's 
 desire for an attribute that was not included in the product. To maintain confidentiality, I won't discuss the purpose, specific rules, and annotation processes for this model. However, I will detail the 
 components, training processes, and the current results. 
