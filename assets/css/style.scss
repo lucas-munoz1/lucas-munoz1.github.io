@@ -46,7 +46,9 @@
   left: 2px; /* Adjust to match the border size */
   right: 2px; /* Adjust to match the border size */
   bottom: 2px; /* Adjust to match the border size */
-  background: linear-gradient(180deg, black, #333);
+  background: linear-gradient(71deg, black, #333);
+  background-size: 300% 300%;
+  animation: fadeGradient 10s ease-in-out infinite;
   border-radius: 22px;
   z-index: -1; /* Ensure it’s on top of the gradient */
 }
