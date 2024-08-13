@@ -15,14 +15,15 @@
 
 .container-card {
   position: relative;
-  width: 50%; 
-  padding-bottom: 50%;
+  width: 300px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height to make it square */
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 25px;
   padding: 30px;
   display: block;
   text-decoration: none;
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
 }
 
 .bg-green-box {
