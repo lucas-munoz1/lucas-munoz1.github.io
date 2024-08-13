@@ -14,8 +14,9 @@
 }
 
 .container-card {
-  position: relative;
+  position: fixed;
   width: 50%; 
+  padding-bottom: 50%;
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 45px;
@@ -31,7 +32,7 @@
 }
 
 .bg-blue-box {
-  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e)
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
   background-size: 300% 300%;
   animation: fadeGradient 10s ease-in-out infinite;
 }
