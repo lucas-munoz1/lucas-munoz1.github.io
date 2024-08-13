@@ -17,13 +17,14 @@
   position: relative;
   width: 300px; /* Set a fixed width */
   height: 300px; /* Set a fixed height to make it square */
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 25px;
   padding: 15px 10px 15px 20px;
   display: block;
   text-decoration: none;
   box-sizing: border-box; /* Ensure padding is included in the width/height */
+  z-index: 1; 
 }
 
 .bg-green-box {
@@ -41,13 +42,13 @@
 .container-card::before {
   content: '';
   position: absolute;
-  top: 3px; /* Adjust to match the border size */
-  left: 3px; /* Adjust to match the border size */
-  right: 3px; /* Adjust to match the border size */
-  bottom: 3px; /* Adjust to match the border size */
-  background: rgba(255, 255, 255, 0.8); /* Adjust this to control transparency */
-  z-index: 1; /* Ensure it’s on top of the gradient */
-  pointer-events: none; /* So it doesn’t block interaction */
+  top: 2px; /* Adjust to match the border size */
+  left: 2px; /* Adjust to match the border size */
+  right: 2px; /* Adjust to match the border size */
+  bottom: 2px; /* Adjust to match the border size */
+  background: linear-gradient(180deg, black, #333);
+  border-radius: 22px;
+  z-index: -1; /* Ensure it’s on top of the gradient */
 }
 
 .card-title {
@@ -57,6 +58,7 @@
   font-style: normal;
   font-size: 20px;
   margin-bottom: 5px;
+  z-index: 2;
 }
 
 .card-description {
@@ -64,6 +66,7 @@
   line-height: 32px;
   color: hsla(0, 0%, 100%, 0.5);
   max-width: 470px;
+  z-index: 2;
 }
 
 @keyframes fadeGradient {
