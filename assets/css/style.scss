@@ -39,20 +39,6 @@
   animation: fadeGradient 10s ease-in-out infinite;
 }
 
-.container-card::before {
-  content: '';
-  position: absolute;
-  top: 1px; /* Adjust to match the border size */
-  left: 1px; /* Adjust to match the border size */
-  right: 1px; /* Adjust to match the border size */
-  bottom: 1px; /* Adjust to match the border size */
-  background: linear-gradient(71deg, #040404, #0E172F, #5B5B5B);
-  background-size: 300% 300%;
-  animation: fadeGradient 10s ease-in-out infinite;
-  border-radius: 22px;
-  z-index: -1; /* Ensure it’s on top of the gradient */
-}
-
 .card-title {
   font-weight: 600;
   color: white;
