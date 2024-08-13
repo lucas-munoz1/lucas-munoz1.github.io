@@ -15,12 +15,11 @@
 
 .container-card {
   position: relative;
-  width: 50%; /* Use 60% of the parent's width */
-  padding-bottom: 50%; /* Maintain a 1:1 aspect ratio to keep the square shape */
+  width: 50%; 
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 45px;
-  padding: 40px;
+  padding: 30px;
   display: block;
   text-decoration: none;
 }
@@ -48,12 +47,4 @@
   line-height: 32px;
   color: hsla(0, 0%, 100%, 0.5);
   max-width: 470px;
-}
-
-.container-card > * {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%; /* Adjust as necessary to fit content within the square */
-  text-align: center;
 }
