@@ -22,7 +22,7 @@ Currently, I'm seeking part-time opportunities that complement my entrepreneuria
     </a>
   </div>
   <div class="container-card bg-green-box">
-    <a href="blob/main/kaggle/Kaggle-Housing-Jupyter.ipynb" class="button">
+    <a href="https://github.com/lucas-munoz1/lucas-munoz1.github.io/blob/main/kaggle/Kaggle-Housing-Jupyter.ipynb" class="button">
       <p class="card-title">Kaggle Housing Price Predictions</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
         <li>Data cleaning</li>
