@@ -43,6 +43,7 @@
 .container-card:hover.bg-green-box,
 .container-card:hover.bg-blue-box {
   animation-duration: 3s; /* Reduce the animation duration to speed it up */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card-title {
