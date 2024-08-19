@@ -24,7 +24,7 @@ I'm currently seeking part-time opportunities that align with my entrepreneurial
   </div>
   <div class="container-card bg-green-box">
     <a href="https://github.com/lucas-munoz1/lucas-munoz1.github.io/blob/main/kaggle/Kaggle-Housing-Jupyter.ipynb" class="button">
-      <img src="/media/home.png" class="icon-top-right" alt="House Icon", style="width: 37px;">
+      <img src="/media/home.png" class="icon-top-right" alt="House Icon" style="width: 37px;">
       <p class="card-title">Kaggle Housing Price Predictions</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
         <li>Data Cleaning</li>
@@ -38,7 +38,7 @@ I'm currently seeking part-time opportunities that align with my entrepreneurial
   </div>
   <div class="container-card bg-red-box">
     <a href="/tableau-visual" class="button">
-      <img src="/media/electric-car.png" class="icon-top-right" alt="Electric Car Icon", style="width: 43px;">
+      <img src="/media/electric-car.png" class="icon-top-right" alt="Electric Car Icon" style="width: 43px;">
       <p class="card-title">Electric Vehicle Data Visualization</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
         <li>Tableau</li>
