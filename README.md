@@ -34,7 +34,7 @@ I'm currently seeking part-time opportunities that align with my entrepreneurial
       </ul>
     </a>
   </div>
-  <div class="container-card bg-green-box">
+  <div class="container-card bg-red-box">
     <a href="/tableau-visual" class="button">
       <p class="card-title">Electric Vehicle Data Visualization</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
