@@ -37,6 +37,7 @@
   right: 15px; /* Adjusts the distance from the right */
   width: 40px; /* Adjusts the size of the icon */
   height: auto;
+  filter: invert(100%) brightness(200%); /*Make it white instead of black*/
 }
 
 .bg-green-box {
