@@ -32,13 +32,19 @@
 }
 
 .bg-green-box {
-  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+  background: linear-gradient(71deg, #0b1a1a, #4a8c72, #0b1a1a);
   background-size: 300% 300%;
   animation: fadeGradient 10s ease-in-out infinite;
 }
 
 .bg-blue-box {
-  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+  background: linear-gradient(71deg, #0a0e12, #495b91, #0a0e12);
+  background-size: 300% 300%;
+  animation: fadeGradient 10s ease-in-out infinite;
+}
+
+.bg-red-box {
+  background: linear-gradient(71deg, #0a0e12, #8c4c4a, #0a0e12);
   background-size: 300% 300%;
   animation: fadeGradient 10s ease-in-out infinite;
 }
