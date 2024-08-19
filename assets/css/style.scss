@@ -33,9 +33,9 @@
 
 .icon-top-right {
   position: absolute;
-  top: 20px; /* Adjusts the distance from the top */
+  top: 24px; /* Adjusts the distance from the top */
   right: 15px; /* Adjusts the distance from the right */
-  width: 40px; /* Adjusts the size of the icon */
+  /* width: 40px; Adjusts the size of the icon - doing it for eac one separately */
   height: auto;
   filter: invert(100%) brightness(200%) opacity(0.5); /*Make it white instead of black*/
 }
