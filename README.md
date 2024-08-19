@@ -14,7 +14,7 @@ I'm currently seeking part-time opportunities that align with my entrepreneurial
       <p class="card-title">Ecommerce Product Analysis Engine</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
         <li>Database</li>
-        <li>Data scraping</li>
+        <li>Data Scraping</li>
         <li>Named Entity Recognition</li>
         <li>Sentiment Analysis</li>
         <li>Text Classification with BERT</li>
@@ -25,12 +25,23 @@ I'm currently seeking part-time opportunities that align with my entrepreneurial
     <a href="https://github.com/lucas-munoz1/lucas-munoz1.github.io/blob/main/kaggle/Kaggle-Housing-Jupyter.ipynb" class="button">
       <p class="card-title">Kaggle Housing Price Predictions</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
-        <li>Data cleaning</li>
+        <li>Data Cleaning</li>
         <li>Feature Engineering</li>
         <li>Forward Feature Selection</li>
         <li>Full Ridge Regression</li>
         <li>Full Lasso Regression</li>
         <li>Random Forest, Bagging, Boosting</li>
+      </ul>
+    </a>
+  </div>
+  <div class="container-card bg-green-box">
+    <a href="#" class="button">
+      <p class="card-title">Electric Vehicle Data Visualization</p>
+      <ul class="card-description" style="margin: 0; padding-left: 20px;">
+        <li>Tableau</li>
+        <li>Dynamic Charts</li>
+        <li>Custom Visuals</li>
+        <li>Data Exploration</li>
       </ul>
     </a>
   </div>
