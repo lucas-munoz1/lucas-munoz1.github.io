@@ -51,7 +51,8 @@
 
 /* Faster animation on hover */
 .container-card:hover.bg-green-box,
-.container-card:hover.bg-blue-box {
+.container-card:hover.bg-blue-box,
+.container-card:hover.bg-red-box {
   animation-duration: 3s; /* Reduce the animation duration to speed it up */
 }
 
