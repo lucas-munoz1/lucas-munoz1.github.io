@@ -1,7 +1,7 @@
 # About 
 
 Hi, I'm Lucas!
-I have a Bachelor of Science in Business Analytics & Technology from Trinity University in San Antonio with. I'm interested in using data to solve complex 
+I have a Bachelor of Science in Business Analytics & Technology from Trinity University in San Antonio. I'm interested in using data to solve complex 
 problems, with a particular interest in machine learning and data analytics. My primary skill set includes Python, R, and SQL, alongside experience in other 
 technologies like JavaScript, HTML/CSS, and Django.
 
