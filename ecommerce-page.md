@@ -26,10 +26,7 @@ AliExpress, and Alibaba’s given product relationships (products that appear un
 _Figure 1: First Draft Relational Schema_
 ![Analytics - Final Relationship Schema](https://github.com/lucas-munoz1/lucas-munoz1.github.io/assets/170210558/32a25523-1e6f-4932-9198-0791c90ad6b9)
 
-The relational schema shown in figure 1 depicts each entity in the database, as well as how the entities are connected. This schema was altered in various ways as I made progress in this project. For 
-instance, the product link no longer acts as the primary key for a product, because one product can have multiple types of links. Similarly, I added a table just to store product links, as I needed to 
-manage a large number of links collected at once. This table was crucial because any error in the code that collected these links would otherwise require restarting the entire process, which would be 
-inefficient and time-consuming.
+The relational schema shown in figure 1 depicts each entity in the database, as well as how the entities are connected.
 
 After creating the relational schema shown in figure 1, I used DBeaver to create and manage a local PostgreSQL database. Populating the database involved mass data scraping. To connect the scraping 
 scripts to the database, I wrote a series of functions that used the Psycopg2 library and SQL to upload data to the right tables, as shown in figure 2. Data scraping will be discussed in depth in the next 
