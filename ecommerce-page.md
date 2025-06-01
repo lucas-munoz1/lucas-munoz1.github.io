@@ -88,17 +88,17 @@ The first model I created was a Named Entity Recognition model using SpaCy, desi
 example, if a product title is ‘Mechanical feeling gaming keyboard’, the type would be ‘keyboard’. This model aimed to categorize products effectively for further analysis and comparison. 
 
 #### Annotation Guidelines
-To create this model, I queried a dataset of 630 product titles from the database, which I expanded to 3245 documents with iterative annotation and training. To annotate these product titles, I used Doccano, which I ran through a docker container on my local machine. For each title I found the products 'type' according to the following definition: 
+To create this model, I queried a dataset of 630 product titles from the database, which I expanded to 3245 documents with iterative annotation and training. To annotate these product titles, I used Doccano (an open-source annotation tool), which I ran through a docker container on my local machine. For each title I found the products 'type' according to the following definition: 
   1. Type - The word or words that specify what the product is, within the context of a broader category; there can be multiple types in a product; the type should always be describing the product, not what the product is made up of or made from. 
 
 #### Reformatting
-For labeling, I decided to use Doccano, an open-source annotation tool. However, the data extracted from the database came in JSON, whereas Doccano accepts 
-JSON Lines. To address this, I wrote a Python script that converted JSON documents into JSON Lines. 
+Since the data queried from the database came in JSON, and Doccano only accepts 
+JSON Lines, I wrote a Python script that converted JSON documents into JSON Lines. 
 
 _Figure 8: Json to Json Lines Function_
 ![json to jsonl](https://github.com/user-attachments/assets/e67c4be5-c794-4a8c-8a89-703f7955a328)
 
-Figure 8 shows the function used to convert the JSON document pulled from the database into a Json Lines format, so it will be accepted by Doccano. 
+Figure 8 shows the function used to convert the JSON document pulled from the database into a Json Lines format.
 
 Similarly, after the annotation was done, I had to reformat the JSON Lines documents into SpaCy's required format. This involved:
 
