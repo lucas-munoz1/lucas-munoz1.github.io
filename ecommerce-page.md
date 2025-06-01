@@ -64,8 +64,7 @@ _Figure 5: AliExpress Scraping Example_
 </video>
 
 
-Figure 5 shows the fully automated process of collecting product links. The python script starts by locating the category dropdown, then navigates to the first category link. From here, it moves to each 
-subcategory, and collects and stores all product links located on the first page. For the sake of reducing size, this video was sped up to 4x speed. 
+Figure 5 shows the fully automated process of collecting product links from AliExpress.
 
 ### Data for Analysis 
    
@@ -79,9 +78,7 @@ _Figure 6: Amazon Scraping Example_
 </video>
 
 
-Figure 6 depicts the fully automated process of collecting product and customer review data. It starts by searching for the given product names, then it finds and stores links to 10 products with over 50 
-customer reviews. Finally, it navigates to each product page, locates and stores the product information, and as many customer reviews as Amazon displays. For the sake of reducing file size, this video 
-was sped up to 4x speed.
+Figure 6 depicts the fully automated process of collecting product and customer review data from products on Amazon.
 
 _Figure 7: Data Collection Flowchart_
 ![Data Collection Flowchart](https://github.com/user-attachments/assets/04e2f1d8-02bd-4475-bac7-676fc1e94f92)
