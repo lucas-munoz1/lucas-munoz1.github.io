@@ -29,8 +29,7 @@ _Figure 1: First Draft Relational Schema_
 The relational schema shown in figure 1 depicts each entity in the database, as well as how the entities are connected.
 
 After creating the relational schema shown in figure 1, I used DBeaver to create and manage a local PostgreSQL database. Populating the database involved mass data scraping. To connect the scraping 
-scripts to the database, I wrote a series of functions that used the Psycopg2 library and SQL to upload data to the right tables, as shown in figure 2. Data scraping will be discussed in depth in the next 
-section.
+scripts to the database, I wrote a series of functions that used the Psycopg2 library and SQL to upload data to the right tables, as shown in figure 2.
 
 _Figure 2: Example SQL/Pyscopg2 Functions_
 ![Datbase import functions but better](https://github.com/user-attachments/assets/75e82c68-79bd-4231-bf6d-3372a1b98be1)
@@ -51,8 +50,7 @@ The data collection process was divided into two sections:
 ### Data for Modeling
 
 First, I needed to collect data specifically for modeling. In order to make a model that generalizes well to data it hasn’t been trained on, I needed a rich variety of products from many different 
-categories. To address this, I created two scrapers for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the scraping classes 
-for single product pages, allowed me to collect my first dataset, which was used throughout the modeling process.
+categories. To address this, I created two link scraping classes for Amazon and Aliexpress, that navigated through the sites given categories, and collected product links. These links, fed into the product page scraping classes, allowed me to collect my first dataset used throughout the modeling process.
 
 
 _Figure 5: AliExpress Scraping Example_
