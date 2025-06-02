@@ -7,8 +7,6 @@ title: Ecommerce Product Analysis Engine
   - [Data & Database Overview](#dataoverview1)
   - [Data Scraping](#scraping)
   - [Named Entity Recognition](#NER)
-  - [Sentiment Analysis](#SA)
-  - [Text Classification](#class)
 
 <a href="/" class="button">Back to Home</a>
 
@@ -132,7 +130,5 @@ This model was iteratively trained using SpaCy's NER component, and after consis
   - Recall: 0.917
   - F-score: 0.906
 
-VISUAL PLACEHOLDER: TABLE DISPLAYING CHANGES IN PERFORMANCE OVER TIME 
-
 My goal was to develop a model with an F-score above 0.9. Through iterative training and refinement, I successfully created an NER model that met this benchmark, achieving an F-score of 0.906. This model 
-now serves as a foundational component for organizing products in the database, and analyzing product titles. Throughout the course of training this model, I learned valuable lessons, usually the hard way. For instance, I did not preprocess the data before annotation, which led to frustrating errors, such as SpaCy failing when it encountered emojis. I made sure to keep these types of lessons in mind as I continued the development of this engine. 
+now serves as a foundational component for organizing products in the database, and analyzing product titles. Throughout the course of training this model, I learned valuable lessons, usually the hard way. For instance, I did not preprocess the data before annotation, which led to frustrating errors, such as SpaCy failing when it encountered emojis. I made sure to keep these types of lessons in mind as I continued the development of this engine.
