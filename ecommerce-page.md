@@ -108,7 +108,7 @@ Similarly, after the annotation was done, I had to reformat the JSON Lines docum
     
 VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
 _Figure 9: Json Lines to Spacy DocBin Functions_
-![json to jsonl](![spacy format example 2](https://github.com/user-attachments/assets/b02e93b6-76a9-4417-b77a-3cac6396c1dd))
+![spacy format example 2](https://github.com/user-attachments/assets/b02e93b6-76a9-4417-b77a-3cac6396c1dd)
 
 #### Consistency
 A significant challenge I faced during the annotation process was maintaining consistency across a growing dataset. Often times I would come across a type of product and not remember how I had designated it's type previously. Furthermore, the search indexing on Doccano was slightly broken, so I was unable to properly search through the dataset after I annotated it. To address this, I: 
