@@ -109,6 +109,8 @@ Similarly, after the annotation was done, I had to reformat the JSON Lines docum
 _Figure 9: Json Lines to Spacy DocBin Functions_
 ![spacy format example 2](https://github.com/user-attachments/assets/b02e93b6-76a9-4417-b77a-3cac6396c1dd)
 
+Figure 9 depicts the functions used to convert the annotated data from Doccano into Spacy formatted data.
+
 #### Consistency & Auto Labeling
 A significant challenge I faced during the annotation process was maintaining consistency across a growing dataset. Often times I would come across a type of product and not remember how I had designated it's type previously. Furthermore, the search indexing on the version of Doccano that I needed to use was slightly broken, so I was unable to properly search through the dataset after I annotated it. To address this, I: 
 
@@ -117,7 +119,12 @@ A significant challenge I faced during the annotation process was maintaining co
      model’s performance in real- 
      time, providing valuable insights for further improvements and speeding up the annotation process.
 
-VISUAL PLACEHOLDER: AUTO LABELING GIF SPLIT – ONE SIDE SHOWING LABELING – OTHER SHOWING TERMINAL OUTPUT 
+_Figure 10: Auto Labeling with Doccano & a Flask server
+<video width="100%" controls loop="" muted = "" autoplay="">
+  <source type="video/mp4" src="/media/auto-labeling.mkv">
+</video>
+
+Figure 10 is an example of using a Flask server to host the NER model, allowing Doccano to automatically label new datapoints. The Flask server accepts a product title in json format, loads the latest version of the NER model, uses the "predict" function to determine the start and end (start_offset, end_offset) of the titles "type", and returns that information to Doccano. 
 
 #### Model Training & Evaluation
 This model was iteratively trained using SpaCy's NER component, and after consistently refining the annotations, the final model achieved the following metrics: 
