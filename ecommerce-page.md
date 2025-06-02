@@ -106,7 +106,6 @@ Similarly, after the annotation was done, I had to reformat the JSON Lines docum
   - Organizing all docs into a DocBin
   - Splitting the dataset into training and test sets.
     
-VISUAL PLACEHOLDER: DIAGRAM SHOWING CONVERSION FROM LINES TO SPACY
 _Figure 9: Json Lines to Spacy DocBin Functions_
 ![spacy format example 2](https://github.com/user-attachments/assets/b02e93b6-76a9-4417-b77a-3cac6396c1dd)
 
