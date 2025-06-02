@@ -18,6 +18,7 @@ I'm currently seeking part-time opportunities that align with my entrepreneurial
         <li>Database Development</li>
         <li>Data Scraping</li>
         <li>Named Entity Recognition</li>
+        <li>Local ML Model Hosting</li>
       </ul>
     </a>
   </div>
