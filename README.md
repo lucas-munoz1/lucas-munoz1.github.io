@@ -15,11 +15,9 @@ I'm currently seeking part-time opportunities that align with my entrepreneurial
       <img src="/media/engine.png" class="icon-top-right" alt="Gear Icon" style="width: 40px;">
       <p class="card-title">Ecommerce Product Analysis Engine</p>
       <ul class="card-description" style="margin: 0; padding-left: 20px;">
-        <li>Database</li>
+        <li>Database Development</li>
         <li>Data Scraping</li>
         <li>Named Entity Recognition</li>
-        <li>Sentiment Analysis</li>
-        <li>Text Classification with BERT</li>
       </ul>
     </a>
   </div>
