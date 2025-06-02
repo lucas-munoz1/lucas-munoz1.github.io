@@ -2,10 +2,9 @@
 
 Hi, I'm Lucas!
 I have a Bachelor of Science in Business Analytics & Technology from Trinity University in San Antonio. I'm interested in using data to solve complex 
-problems, with a particular interest in machine learning and data analytics. My primary skill set includes Python, R, and SQL, alongside experience in other 
-technologies like JavaScript, HTML/CSS, and Django.
+problems, with a particular interest in machine learning and data analytics. My primary skill set includes Python, R, and SQL, alongside experience in web development tools such as JavaScript, HTML/CSS, and Django. Additionally, I am proficient in Microsoft Azure, with the certification "Microsoft Certified: Azure Data Scientist Associate".
 
-I'm currently seeking part-time opportunities that align with my entrepreneurial journey, particularly as I work on building an eCommerce-based business, which I explore in detail throughout this portfolio.
+In this portfolio I briefly discuss 3 major projects: an analytical engine designed to analyze and explain e-commerce product sales, an exploratory r-script with several models used to make housing price predictions from a Kaggle dataset, and a data visualization project used to demonstrate trends in electric car sales.
 
 # Projects 
 
