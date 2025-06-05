@@ -115,7 +115,7 @@ A significant challenge I faced during the annotation process was maintaining co
      model’s performance in real- 
      time, providing valuable insights for further improvements and speeding up the annotation process.
 
-_Figure 10: Auto Labeling with Doccano & a Flask server
+_Figure 10: Auto Labeling with Doccano & a Flask server_
 <video width="100%" controls loop="" muted = "" autoplay="">
   <source type="video/mp4" src="/media/auto-labeling.mkv">
 </video>
